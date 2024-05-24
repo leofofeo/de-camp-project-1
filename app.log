@@ -1,0 +1,374 @@
+2024-05-23 21:12:57,884 - logger - DEBUG - This is a debug message
+2024-05-23 21:12:57,884 - logger - INFO - This is an info message
+2024-05-23 21:12:57,884 - logger - WARNING - This is a warning message
+2024-05-23 21:12:57,884 - logger - ERROR - This is an error message
+2024-05-23 21:12:57,884 - logger - CRITICAL - This is a critical message
+2024-05-23 21:13:43,320 - logger - DEBUG - This is a debug message
+2024-05-23 21:13:43,320 - logger - INFO - This is an info message
+2024-05-23 21:13:43,320 - logger - WARNING - This is a warning message
+2024-05-23 21:13:43,320 - logger - ERROR - This is an error message
+2024-05-23 21:13:43,320 - logger - CRITICAL - This is a critical message
+2024-05-23 21:13:48,149 - logger - DEBUG - This is a debug message
+2024-05-23 21:13:48,149 - logger - INFO - This is an info message
+2024-05-23 21:13:48,149 - logger - WARNING - This is a warning message
+2024-05-23 21:13:48,149 - logger - ERROR - This is an error message
+2024-05-23 21:13:48,150 - logger - CRITICAL - This is a critical message
+2024-05-23 21:17:50,309 - logger - DEBUG - This is a debug message
+2024-05-23 21:17:50,310 - logger - INFO - This is an info message
+2024-05-23 21:17:50,310 - logger - WARNING - This is a warning message
+2024-05-23 21:17:50,310 - logger - ERROR - This is an error message
+2024-05-23 21:17:50,310 - logger - CRITICAL - This is a critical message
+2024-05-23 21:17:50,310 - logger - INFO - Starting the application
+2024-05-23 21:18:45,870 - logger - DEBUG - This is a debug message
+2024-05-23 21:18:45,871 - logger - INFO - This is an info message
+2024-05-23 21:18:45,871 - logger - WARNING - This is a warning message
+2024-05-23 21:18:45,871 - logger - ERROR - This is an error message
+2024-05-23 21:18:45,871 - logger - CRITICAL - This is a critical message
+2024-05-23 21:18:45,871 - logger - INFO - Starting the application
+2024-05-23 21:19:33,471 - logger - DEBUG - This is a debug message
+2024-05-23 21:19:33,472 - logger - INFO - This is an info message
+2024-05-23 21:19:33,472 - logger - WARNING - This is a warning message
+2024-05-23 21:19:33,472 - logger - ERROR - This is an error message
+2024-05-23 21:19:33,472 - logger - CRITICAL - This is a critical message
+2024-05-23 21:19:33,472 - logger - INFO - Starting the application
+2024-05-23 21:20:00,243 - logger - DEBUG - This is a debug message
+2024-05-23 21:20:00,243 - logger - INFO - This is an info message
+2024-05-23 21:20:00,244 - logger - WARNING - This is a warning message
+2024-05-23 21:20:00,244 - logger - ERROR - This is an error message
+2024-05-23 21:20:00,244 - logger - CRITICAL - This is a critical message
+2024-05-23 21:20:00,244 - logger - INFO - Starting the application
+2024-05-23 21:21:30,656 - logger - DEBUG - This is a debug message
+2024-05-23 21:21:30,656 - logger - INFO - This is an info message
+2024-05-23 21:21:30,656 - logger - WARNING - This is a warning message
+2024-05-23 21:21:30,656 - logger - ERROR - This is an error message
+2024-05-23 21:21:30,656 - logger - CRITICAL - This is a critical message
+2024-05-23 21:21:30,656 - logger - INFO - Starting the application
+2024-05-23 21:22:55,009 - logger - DEBUG - This is a debug message
+2024-05-23 21:22:55,009 - logger - INFO - This is an info message
+2024-05-23 21:22:55,009 - logger - WARNING - This is a warning message
+2024-05-23 21:22:55,009 - logger - ERROR - This is an error message
+2024-05-23 21:22:55,009 - logger - CRITICAL - This is a critical message
+2024-05-23 21:22:55,009 - logger - INFO - Starting the application
+2024-05-23 21:23:27,773 - logger - DEBUG - This is a debug message
+2024-05-23 21:23:27,773 - logger - INFO - This is an info message
+2024-05-23 21:23:27,773 - logger - WARNING - This is a warning message
+2024-05-23 21:23:27,773 - logger - ERROR - This is an error message
+2024-05-23 21:23:27,773 - logger - CRITICAL - This is a critical message
+2024-05-23 21:23:27,773 - logger - INFO - Starting the application
+2024-05-23 21:24:00,320 - logger - DEBUG - This is a debug message
+2024-05-23 21:24:00,320 - logger - INFO - This is an info message
+2024-05-23 21:24:00,320 - logger - WARNING - This is a warning message
+2024-05-23 21:24:00,320 - logger - ERROR - This is an error message
+2024-05-23 21:24:00,320 - logger - CRITICAL - This is a critical message
+2024-05-23 21:24:00,320 - logger - INFO - Starting the application
+2024-05-23 21:24:55,116 - logger - DEBUG - This is a debug message
+2024-05-23 21:24:55,116 - logger - INFO - This is an info message
+2024-05-23 21:24:55,116 - logger - WARNING - This is a warning message
+2024-05-23 21:24:55,116 - logger - ERROR - This is an error message
+2024-05-23 21:24:55,116 - logger - CRITICAL - This is a critical message
+2024-05-23 21:24:55,117 - logger - INFO - Starting the application
+2024-05-23 21:26:00,717 - logger - DEBUG - This is a debug message
+2024-05-23 21:26:00,717 - logger - INFO - This is an info message
+2024-05-23 21:26:00,717 - logger - WARNING - This is a warning message
+2024-05-23 21:26:00,717 - logger - ERROR - This is an error message
+2024-05-23 21:26:00,717 - logger - CRITICAL - This is a critical message
+2024-05-23 21:26:00,717 - logger - INFO - Starting the application
+2024-05-23 21:33:23,485 - logger - DEBUG - This is a debug message
+2024-05-23 21:33:23,485 - logger - INFO - This is an info message
+2024-05-23 21:33:23,485 - logger - WARNING - This is a warning message
+2024-05-23 21:33:23,485 - logger - ERROR - This is an error message
+2024-05-23 21:33:23,485 - logger - CRITICAL - This is a critical message
+2024-05-23 21:33:23,485 - logger - INFO - Starting the application
+2024-05-23 21:33:52,121 - logger - DEBUG - This is a debug message
+2024-05-23 21:33:52,121 - logger - INFO - This is an info message
+2024-05-23 21:33:52,121 - logger - WARNING - This is a warning message
+2024-05-23 21:33:52,121 - logger - ERROR - This is an error message
+2024-05-23 21:33:52,121 - logger - CRITICAL - This is a critical message
+2024-05-23 21:33:52,122 - logger - INFO - Starting the application
+2024-05-23 21:34:01,049 - logger - DEBUG - This is a debug message
+2024-05-23 21:34:01,049 - logger - INFO - This is an info message
+2024-05-23 21:34:01,049 - logger - WARNING - This is a warning message
+2024-05-23 21:34:01,049 - logger - ERROR - This is an error message
+2024-05-23 21:34:01,049 - logger - CRITICAL - This is a critical message
+2024-05-23 21:34:01,049 - logger - INFO - Starting the application
+2024-05-23 21:34:33,188 - logger - DEBUG - This is a debug message
+2024-05-23 21:34:33,188 - logger - INFO - This is an info message
+2024-05-23 21:34:33,188 - logger - WARNING - This is a warning message
+2024-05-23 21:34:33,188 - logger - ERROR - This is an error message
+2024-05-23 21:34:33,188 - logger - CRITICAL - This is a critical message
+2024-05-23 21:34:33,188 - logger - INFO - Starting the application
+2024-05-23 21:35:01,572 - logger - DEBUG - This is a debug message
+2024-05-23 21:35:01,572 - logger - INFO - This is an info message
+2024-05-23 21:35:01,572 - logger - WARNING - This is a warning message
+2024-05-23 21:35:01,573 - logger - ERROR - This is an error message
+2024-05-23 21:35:01,573 - logger - CRITICAL - This is a critical message
+2024-05-23 21:35:01,573 - logger - INFO - Starting the application
+2024-05-23 21:36:44,072 - logger - DEBUG - This is a debug message
+2024-05-23 21:36:44,072 - logger - INFO - This is an info message
+2024-05-23 21:36:44,072 - logger - WARNING - This is a warning message
+2024-05-23 21:36:44,072 - logger - ERROR - This is an error message
+2024-05-23 21:36:44,072 - logger - CRITICAL - This is a critical message
+2024-05-23 21:36:44,072 - logger - INFO - Starting the application
+2024-05-23 21:37:19,898 - logger - DEBUG - This is a debug message
+2024-05-23 21:37:19,898 - logger - INFO - This is an info message
+2024-05-23 21:37:19,898 - logger - WARNING - This is a warning message
+2024-05-23 21:37:19,898 - logger - ERROR - This is an error message
+2024-05-23 21:37:19,898 - logger - CRITICAL - This is a critical message
+2024-05-23 21:37:19,898 - logger - INFO - Starting the application
+2024-05-23 21:39:10,894 - logger - DEBUG - This is a debug message
+2024-05-23 21:39:10,894 - logger - INFO - This is an info message
+2024-05-23 21:39:10,894 - logger - WARNING - This is a warning message
+2024-05-23 21:39:10,894 - logger - ERROR - This is an error message
+2024-05-23 21:39:10,894 - logger - CRITICAL - This is a critical message
+2024-05-23 21:39:10,894 - logger - INFO - Starting the application
+2024-05-23 21:39:30,298 - logger - DEBUG - This is a debug message
+2024-05-23 21:39:30,298 - logger - INFO - This is an info message
+2024-05-23 21:39:30,298 - logger - WARNING - This is a warning message
+2024-05-23 21:39:30,298 - logger - ERROR - This is an error message
+2024-05-23 21:39:30,298 - logger - CRITICAL - This is a critical message
+2024-05-23 21:39:30,298 - logger - INFO - Starting the application
+2024-05-23 21:39:44,676 - logger - DEBUG - This is a debug message
+2024-05-23 21:39:44,676 - logger - INFO - This is an info message
+2024-05-23 21:39:44,676 - logger - WARNING - This is a warning message
+2024-05-23 21:39:44,676 - logger - ERROR - This is an error message
+2024-05-23 21:39:44,676 - logger - CRITICAL - This is a critical message
+2024-05-23 21:39:44,676 - logger - INFO - Starting the application
+2024-05-23 21:39:59,093 - logger - DEBUG - This is a debug message
+2024-05-23 21:39:59,093 - logger - INFO - This is an info message
+2024-05-23 21:39:59,093 - logger - WARNING - This is a warning message
+2024-05-23 21:39:59,093 - logger - ERROR - This is an error message
+2024-05-23 21:39:59,093 - logger - CRITICAL - This is a critical message
+2024-05-23 21:39:59,093 - logger - INFO - Starting the application
+2024-05-23 21:40:20,158 - logger - DEBUG - This is a debug message
+2024-05-23 21:40:20,159 - logger - INFO - This is an info message
+2024-05-23 21:40:20,159 - logger - WARNING - This is a warning message
+2024-05-23 21:40:20,159 - logger - ERROR - This is an error message
+2024-05-23 21:40:20,159 - logger - CRITICAL - This is a critical message
+2024-05-23 21:40:20,159 - logger - INFO - Starting the application
+2024-05-23 21:40:56,929 - logger - DEBUG - This is a debug message
+2024-05-23 21:40:56,929 - logger - INFO - This is an info message
+2024-05-23 21:40:56,929 - logger - WARNING - This is a warning message
+2024-05-23 21:40:56,929 - logger - ERROR - This is an error message
+2024-05-23 21:40:56,929 - logger - CRITICAL - This is a critical message
+2024-05-23 21:40:56,929 - logger - INFO - Starting the application
+2024-05-23 21:41:34,355 - logger - DEBUG - This is a debug message
+2024-05-23 21:41:34,356 - logger - INFO - This is an info message
+2024-05-23 21:41:34,356 - logger - WARNING - This is a warning message
+2024-05-23 21:41:34,356 - logger - ERROR - This is an error message
+2024-05-23 21:41:34,356 - logger - CRITICAL - This is a critical message
+2024-05-23 21:41:34,356 - logger - INFO - Starting the application
+2024-05-23 21:41:40,302 - logger - DEBUG - This is a debug message
+2024-05-23 21:41:40,302 - logger - INFO - This is an info message
+2024-05-23 21:41:40,302 - logger - WARNING - This is a warning message
+2024-05-23 21:41:40,302 - logger - ERROR - This is an error message
+2024-05-23 21:41:40,302 - logger - CRITICAL - This is a critical message
+2024-05-23 21:41:40,302 - logger - INFO - Starting the application
+2024-05-23 21:41:45,338 - logger - DEBUG - This is a debug message
+2024-05-23 21:41:45,338 - logger - INFO - This is an info message
+2024-05-23 21:41:45,338 - logger - WARNING - This is a warning message
+2024-05-23 21:41:45,338 - logger - ERROR - This is an error message
+2024-05-23 21:41:45,338 - logger - CRITICAL - This is a critical message
+2024-05-23 21:41:45,338 - logger - INFO - Starting the application
+2024-05-23 21:42:49,771 - logger - DEBUG - This is a debug message
+2024-05-23 21:42:49,771 - logger - INFO - This is an info message
+2024-05-23 21:42:49,771 - logger - WARNING - This is a warning message
+2024-05-23 21:42:49,771 - logger - ERROR - This is an error message
+2024-05-23 21:42:49,771 - logger - CRITICAL - This is a critical message
+2024-05-23 21:42:49,771 - logger - INFO - Starting the application
+2024-05-23 21:47:32,340 - logger - DEBUG - This is a debug message
+2024-05-23 21:47:32,340 - logger - INFO - This is an info message
+2024-05-23 21:47:32,340 - logger - WARNING - This is a warning message
+2024-05-23 21:47:32,340 - logger - ERROR - This is an error message
+2024-05-23 21:47:32,340 - logger - CRITICAL - This is a critical message
+2024-05-23 21:47:32,340 - logger - INFO - Starting the application
+2024-05-23 21:48:56,193 - logger - DEBUG - This is a debug message
+2024-05-23 21:48:56,194 - logger - INFO - This is an info message
+2024-05-23 21:48:56,194 - logger - WARNING - This is a warning message
+2024-05-23 21:48:56,194 - logger - ERROR - This is an error message
+2024-05-23 21:48:56,194 - logger - CRITICAL - This is a critical message
+2024-05-23 21:48:56,194 - logger - INFO - Starting the application
+2024-05-23 21:53:54,708 - logger - DEBUG - This is a debug message
+2024-05-23 21:53:54,708 - logger - INFO - This is an info message
+2024-05-23 21:53:54,708 - logger - WARNING - This is a warning message
+2024-05-23 21:53:54,708 - logger - ERROR - This is an error message
+2024-05-23 21:53:54,708 - logger - CRITICAL - This is a critical message
+2024-05-23 21:53:54,708 - logger - INFO - Starting the application
+2024-05-23 21:54:05,890 - logger - DEBUG - This is a debug message
+2024-05-23 21:54:05,890 - logger - INFO - This is an info message
+2024-05-23 21:54:05,890 - logger - WARNING - This is a warning message
+2024-05-23 21:54:05,890 - logger - ERROR - This is an error message
+2024-05-23 21:54:05,890 - logger - CRITICAL - This is a critical message
+2024-05-23 21:54:05,890 - logger - INFO - Starting the application
+2024-05-23 21:57:28,200 - logger - DEBUG - This is a debug message
+2024-05-23 21:57:28,200 - logger - INFO - This is an info message
+2024-05-23 21:57:28,200 - logger - WARNING - This is a warning message
+2024-05-23 21:57:28,200 - logger - ERROR - This is an error message
+2024-05-23 21:57:28,200 - logger - CRITICAL - This is a critical message
+2024-05-23 21:57:28,200 - logger - INFO - Starting the application
+2024-05-23 21:59:56,517 - logger - DEBUG - This is a debug message
+2024-05-23 21:59:56,518 - logger - INFO - This is an info message
+2024-05-23 21:59:56,518 - logger - WARNING - This is a warning message
+2024-05-23 21:59:56,518 - logger - ERROR - This is an error message
+2024-05-23 21:59:56,518 - logger - CRITICAL - This is a critical message
+2024-05-23 21:59:56,518 - logger - INFO - Starting the application
+2024-05-23 22:02:43,185 - logger - DEBUG - This is a debug message
+2024-05-23 22:02:43,185 - logger - INFO - This is an info message
+2024-05-23 22:02:43,185 - logger - WARNING - This is a warning message
+2024-05-23 22:02:43,185 - logger - ERROR - This is an error message
+2024-05-23 22:02:43,185 - logger - CRITICAL - This is a critical message
+2024-05-23 22:02:43,185 - logger - INFO - Starting the application
+2024-05-23 22:03:59,692 - logger - DEBUG - This is a debug message
+2024-05-23 22:03:59,692 - logger - INFO - This is an info message
+2024-05-23 22:03:59,692 - logger - WARNING - This is a warning message
+2024-05-23 22:03:59,692 - logger - ERROR - This is an error message
+2024-05-23 22:03:59,692 - logger - CRITICAL - This is a critical message
+2024-05-23 22:03:59,693 - logger - INFO - Starting the application
+2024-05-23 22:06:04,481 - logger - DEBUG - This is a debug message
+2024-05-23 22:06:04,481 - logger - INFO - This is an info message
+2024-05-23 22:06:04,481 - logger - WARNING - This is a warning message
+2024-05-23 22:06:04,481 - logger - ERROR - This is an error message
+2024-05-23 22:06:04,481 - logger - CRITICAL - This is a critical message
+2024-05-23 22:06:04,481 - logger - INFO - Starting the application
+2024-05-23 22:06:17,819 - logger - DEBUG - This is a debug message
+2024-05-23 22:06:17,819 - logger - INFO - This is an info message
+2024-05-23 22:06:17,819 - logger - WARNING - This is a warning message
+2024-05-23 22:06:17,819 - logger - ERROR - This is an error message
+2024-05-23 22:06:17,819 - logger - CRITICAL - This is a critical message
+2024-05-23 22:06:17,819 - logger - INFO - Starting the application
+2024-05-23 22:07:27,441 - logger - DEBUG - This is a debug message
+2024-05-23 22:07:27,441 - logger - INFO - This is an info message
+2024-05-23 22:07:27,441 - logger - WARNING - This is a warning message
+2024-05-23 22:07:27,441 - logger - ERROR - This is an error message
+2024-05-23 22:07:27,441 - logger - CRITICAL - This is a critical message
+2024-05-23 22:07:27,441 - logger - INFO - Starting the application
+2024-05-23 22:07:47,415 - logger - DEBUG - This is a debug message
+2024-05-23 22:07:47,415 - logger - INFO - This is an info message
+2024-05-23 22:07:47,415 - logger - WARNING - This is a warning message
+2024-05-23 22:07:47,415 - logger - ERROR - This is an error message
+2024-05-23 22:07:47,416 - logger - CRITICAL - This is a critical message
+2024-05-23 22:07:47,416 - logger - INFO - Starting the application
+2024-05-23 22:08:22,603 - logger - DEBUG - This is a debug message
+2024-05-23 22:08:22,603 - logger - INFO - This is an info message
+2024-05-23 22:08:22,603 - logger - WARNING - This is a warning message
+2024-05-23 22:08:22,603 - logger - ERROR - This is an error message
+2024-05-23 22:08:22,603 - logger - CRITICAL - This is a critical message
+2024-05-23 22:08:22,603 - logger - INFO - Starting the application
+2024-05-23 22:08:31,188 - logger - DEBUG - This is a debug message
+2024-05-23 22:08:31,188 - logger - INFO - This is an info message
+2024-05-23 22:08:31,188 - logger - WARNING - This is a warning message
+2024-05-23 22:08:31,188 - logger - ERROR - This is an error message
+2024-05-23 22:08:31,188 - logger - CRITICAL - This is a critical message
+2024-05-23 22:08:31,188 - logger - INFO - Starting the application
+2024-05-23 22:09:13,072 - logger - DEBUG - This is a debug message
+2024-05-23 22:09:13,072 - logger - INFO - This is an info message
+2024-05-23 22:09:13,072 - logger - WARNING - This is a warning message
+2024-05-23 22:09:13,072 - logger - ERROR - This is an error message
+2024-05-23 22:09:13,072 - logger - CRITICAL - This is a critical message
+2024-05-23 22:09:13,072 - logger - INFO - Starting the application
+2024-05-23 22:10:46,081 - logger - DEBUG - This is a debug message
+2024-05-23 22:10:46,081 - logger - INFO - This is an info message
+2024-05-23 22:10:46,081 - logger - WARNING - This is a warning message
+2024-05-23 22:10:46,081 - logger - ERROR - This is an error message
+2024-05-23 22:10:46,081 - logger - CRITICAL - This is a critical message
+2024-05-23 22:10:46,081 - logger - INFO - Starting the application
+2024-05-23 22:10:46,081 - logger - INFO - Database does not exist
+2024-05-23 22:10:46,119 - logger - INFO - Finished the application
+2024-05-23 22:14:53,399 - logger - DEBUG - This is a debug message
+2024-05-23 22:14:53,399 - logger - INFO - This is an info message
+2024-05-23 22:14:53,399 - logger - WARNING - This is a warning message
+2024-05-23 22:14:53,399 - logger - ERROR - This is an error message
+2024-05-23 22:14:53,399 - logger - CRITICAL - This is a critical message
+2024-05-23 22:14:53,399 - logger - INFO - Starting the application
+2024-05-23 22:17:31,639 - logger - DEBUG - This is a debug message
+2024-05-23 22:17:31,639 - logger - INFO - This is an info message
+2024-05-23 22:17:31,639 - logger - WARNING - This is a warning message
+2024-05-23 22:17:31,639 - logger - ERROR - This is an error message
+2024-05-23 22:17:31,639 - logger - CRITICAL - This is a critical message
+2024-05-23 22:17:31,639 - logger - INFO - Starting the application
+2024-05-23 22:18:41,990 - logger - DEBUG - This is a debug message
+2024-05-23 22:18:41,990 - logger - INFO - This is an info message
+2024-05-23 22:18:41,990 - logger - WARNING - This is a warning message
+2024-05-23 22:18:41,990 - logger - ERROR - This is an error message
+2024-05-23 22:18:41,991 - logger - CRITICAL - This is a critical message
+2024-05-23 22:18:41,991 - logger - INFO - Starting the application
+2024-05-23 22:18:42,023 - logger - INFO - Finished the application
+2024-05-23 22:18:55,127 - logger - DEBUG - This is a debug message
+2024-05-23 22:18:55,127 - logger - INFO - This is an info message
+2024-05-23 22:18:55,127 - logger - WARNING - This is a warning message
+2024-05-23 22:18:55,127 - logger - ERROR - This is an error message
+2024-05-23 22:18:55,127 - logger - CRITICAL - This is a critical message
+2024-05-23 22:18:55,127 - logger - INFO - Starting the application
+2024-05-23 22:18:55,160 - logger - INFO - Finished the application
+2024-05-23 22:19:52,230 - logger - DEBUG - This is a debug message
+2024-05-23 22:19:52,231 - logger - INFO - This is an info message
+2024-05-23 22:19:52,231 - logger - WARNING - This is a warning message
+2024-05-23 22:19:52,231 - logger - ERROR - This is an error message
+2024-05-23 22:19:52,231 - logger - CRITICAL - This is a critical message
+2024-05-23 22:19:52,231 - logger - INFO - Starting the application
+2024-05-23 22:19:52,267 - logger - INFO - Finished the application
+2024-05-23 22:20:17,681 - logger - DEBUG - This is a debug message
+2024-05-23 22:20:17,681 - logger - INFO - This is an info message
+2024-05-23 22:20:17,681 - logger - WARNING - This is a warning message
+2024-05-23 22:20:17,681 - logger - ERROR - This is an error message
+2024-05-23 22:20:17,681 - logger - CRITICAL - This is a critical message
+2024-05-23 22:20:17,681 - logger - INFO - Starting the application
+2024-05-23 22:20:29,392 - logger - DEBUG - This is a debug message
+2024-05-23 22:20:29,392 - logger - INFO - This is an info message
+2024-05-23 22:20:29,392 - logger - WARNING - This is a warning message
+2024-05-23 22:20:29,392 - logger - ERROR - This is an error message
+2024-05-23 22:20:29,392 - logger - CRITICAL - This is a critical message
+2024-05-23 22:20:29,392 - logger - INFO - Starting the application
+2024-05-23 22:20:29,425 - logger - INFO - Finished the application
+2024-05-23 22:20:42,583 - logger - DEBUG - This is a debug message
+2024-05-23 22:20:42,583 - logger - INFO - This is an info message
+2024-05-23 22:20:42,583 - logger - WARNING - This is a warning message
+2024-05-23 22:20:42,583 - logger - ERROR - This is an error message
+2024-05-23 22:20:42,583 - logger - CRITICAL - This is a critical message
+2024-05-23 22:20:42,583 - logger - INFO - Starting the application
+2024-05-23 22:20:42,616 - logger - INFO - Finished the application
+2024-05-23 22:23:29,181 - logger - DEBUG - This is a debug message
+2024-05-23 22:23:29,181 - logger - INFO - This is an info message
+2024-05-23 22:23:29,181 - logger - WARNING - This is a warning message
+2024-05-23 22:23:29,181 - logger - ERROR - This is an error message
+2024-05-23 22:23:29,181 - logger - CRITICAL - This is a critical message
+2024-05-23 22:23:29,181 - logger - INFO - Starting the application
+2024-05-23 22:23:29,218 - logger - INFO - Finished the application
+2024-05-23 22:23:57,900 - logger - DEBUG - This is a debug message
+2024-05-23 22:23:57,900 - logger - INFO - This is an info message
+2024-05-23 22:23:57,900 - logger - WARNING - This is a warning message
+2024-05-23 22:23:57,900 - logger - ERROR - This is an error message
+2024-05-23 22:23:57,900 - logger - CRITICAL - This is a critical message
+2024-05-23 22:23:57,900 - logger - INFO - Starting the application
+2024-05-23 22:24:21,119 - logger - DEBUG - This is a debug message
+2024-05-23 22:24:21,119 - logger - INFO - This is an info message
+2024-05-23 22:24:21,119 - logger - WARNING - This is a warning message
+2024-05-23 22:24:21,119 - logger - ERROR - This is an error message
+2024-05-23 22:24:21,119 - logger - CRITICAL - This is a critical message
+2024-05-23 22:24:21,119 - logger - INFO - Starting the application
+2024-05-23 22:24:21,150 - logger - INFO - Finished the application
+2024-05-23 22:26:36,526 - logger - DEBUG - This is a debug message
+2024-05-23 22:26:36,526 - logger - INFO - This is an info message
+2024-05-23 22:26:36,526 - logger - WARNING - This is a warning message
+2024-05-23 22:26:36,526 - logger - ERROR - This is an error message
+2024-05-23 22:26:36,526 - logger - CRITICAL - This is a critical message
+2024-05-23 22:26:36,526 - logger - INFO - Starting the application
+2024-05-23 22:26:52,224 - logger - DEBUG - This is a debug message
+2024-05-23 22:26:52,224 - logger - INFO - This is an info message
+2024-05-23 22:26:52,224 - logger - WARNING - This is a warning message
+2024-05-23 22:26:52,224 - logger - ERROR - This is an error message
+2024-05-23 22:26:52,224 - logger - CRITICAL - This is a critical message
+2024-05-23 22:26:52,224 - logger - INFO - Starting the application
+2024-05-23 22:27:12,861 - logger - DEBUG - This is a debug message
+2024-05-23 22:27:12,861 - logger - INFO - This is an info message
+2024-05-23 22:27:12,861 - logger - WARNING - This is a warning message
+2024-05-23 22:27:12,861 - logger - ERROR - This is an error message
+2024-05-23 22:27:12,861 - logger - CRITICAL - This is a critical message
+2024-05-23 22:27:12,861 - logger - INFO - Starting the application
+2024-05-23 22:27:12,899 - logger - INFO - Finished the application
+2024-05-23 22:28:13,192 - logger - DEBUG - This is a debug message
+2024-05-23 22:28:13,192 - logger - INFO - This is an info message
+2024-05-23 22:28:13,192 - logger - WARNING - This is a warning message
+2024-05-23 22:28:13,192 - logger - ERROR - This is an error message
+2024-05-23 22:28:13,192 - logger - CRITICAL - This is a critical message
+2024-05-23 22:28:13,192 - logger - INFO - Starting the application
+2024-05-23 22:28:13,238 - logger - INFO - Finished the application
