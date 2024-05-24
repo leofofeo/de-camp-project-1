@@ -6,7 +6,7 @@ from pathlib import Path
 
 load_dotenv()
 
-def database_exists():
+def tables_exist():
     load_dotenv()
     db_name = os.getenv("DB_NAME", "data_ticker")
     db_user = os.getenv("DB_USER", "postgres")
@@ -23,25 +23,28 @@ def database_exists():
     ) as connection:
         db_exists = False
         with connection.cursor() as cursor:
-            cursor.execute("SELECT 1 FROM pg_database where datname=%s;", (os.getenv("DB_NAME"),))
+            cursor.execute("""
+                SELECT EXISTS (
+                    SELECT 1
+                    FROM information_schema.tables
+                    WHERE table_schema = 'public'
+                AND table_name = %s
+                );
+            """, ("company_profiles",))
             connection.commit()
         
-            exists = cursor.fetchone()
-            print(exists)
+            exists = cursor.fetchone()[0]
             if exists:
-                print("database exists")
                 db_exists = True
-            else:
-                print("databse doesn't exist")
 
     return db_exists
     
-def initialize_database():
-    print("Initializing the database")
+def create_tables():
+    print("Creating tables")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'migrations'
-    file_path = parallel_dir / '001_initial_migration.sql'
+    file_path = parallel_dir / '001_create_primary_tables.sql'
     print(file_path)
     fd = open(file_path, 'r')
     sql_file = fd.read()

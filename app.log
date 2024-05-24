@@ -372,3 +372,1631 @@
 2024-05-23 22:28:13,192 - logger - CRITICAL - This is a critical message
 2024-05-23 22:28:13,192 - logger - INFO - Starting the application
 2024-05-23 22:28:13,238 - logger - INFO - Finished the application
+2024-05-23 22:38:18,839 - logger - DEBUG - This is a debug message
+2024-05-23 22:38:18,839 - logger - INFO - This is an info message
+2024-05-23 22:38:18,839 - logger - WARNING - This is a warning message
+2024-05-23 22:38:18,839 - logger - ERROR - This is an error message
+2024-05-23 22:38:18,839 - logger - CRITICAL - This is a critical message
+2024-05-23 22:38:18,839 - logger - INFO - Starting the application
+2024-05-23 22:38:18,885 - logger - INFO - Finished the application
+2024-05-23 22:40:58,075 - logger - DEBUG - This is a debug message
+2024-05-23 22:40:58,075 - logger - INFO - This is an info message
+2024-05-23 22:40:58,075 - logger - WARNING - This is a warning message
+2024-05-23 22:40:58,075 - logger - ERROR - This is an error message
+2024-05-23 22:40:58,075 - logger - CRITICAL - This is a critical message
+2024-05-23 22:40:58,075 - logger - INFO - Starting the application
+2024-05-23 22:40:58,113 - logger - INFO - Finished the application
+2024-05-23 22:41:06,108 - logger - DEBUG - This is a debug message
+2024-05-23 22:41:06,108 - logger - INFO - This is an info message
+2024-05-23 22:41:06,108 - logger - WARNING - This is a warning message
+2024-05-23 22:41:06,108 - logger - ERROR - This is an error message
+2024-05-23 22:41:06,108 - logger - CRITICAL - This is a critical message
+2024-05-23 22:41:06,108 - logger - INFO - Starting the application
+2024-05-23 22:41:06,150 - logger - INFO - Finished the application
+2024-05-23 22:41:23,839 - logger - DEBUG - This is a debug message
+2024-05-23 22:41:23,839 - logger - INFO - This is an info message
+2024-05-23 22:41:23,839 - logger - WARNING - This is a warning message
+2024-05-23 22:41:23,839 - logger - ERROR - This is an error message
+2024-05-23 22:41:23,839 - logger - CRITICAL - This is a critical message
+2024-05-23 22:41:23,839 - logger - INFO - Starting the application
+2024-05-23 22:41:23,882 - logger - INFO - Finished the application
+2024-05-23 22:45:49,481 - logger - DEBUG - This is a debug message
+2024-05-23 22:45:49,481 - logger - INFO - This is an info message
+2024-05-23 22:45:49,481 - logger - WARNING - This is a warning message
+2024-05-23 22:45:49,481 - logger - ERROR - This is an error message
+2024-05-23 22:45:49,481 - logger - CRITICAL - This is a critical message
+2024-05-23 22:45:49,481 - logger - INFO - Starting the application
+2024-05-23 22:45:49,511 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:45:49,511 - yfinance - DEBUG - Entering get()
+2024-05-23 22:45:49,511 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:45:49,511 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:45:49,511 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:45:49,511 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:45:49,511 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:45:49,512 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:45:49,512 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:45:49,512 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:45:49,512 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:45:49,514 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:45:49,636 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:45:49,636 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:45:49,637 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:45:49,637 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:45:49,638 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:45:49,731 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:45:49,732 - yfinance - DEBUG - response code=200
+2024-05-23 22:45:49,732 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:45:49,733 - yfinance - DEBUG - Entering get()
+2024-05-23 22:45:49,733 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:45:49,733 - yfinance - DEBUG - params=None
+2024-05-23 22:45:49,733 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:45:49,733 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:45:49,733 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:45:49,733 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:45:49,733 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:45:49,733 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:45:49,733 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:45:49,782 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:45:49,783 - yfinance - DEBUG - response code=200
+2024-05-23 22:45:49,783 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:47:08,024 - logger - DEBUG - This is a debug message
+2024-05-23 22:47:08,024 - logger - INFO - This is an info message
+2024-05-23 22:47:08,024 - logger - WARNING - This is a warning message
+2024-05-23 22:47:08,024 - logger - ERROR - This is an error message
+2024-05-23 22:47:08,024 - logger - CRITICAL - This is a critical message
+2024-05-23 22:47:08,024 - logger - INFO - Starting the application
+2024-05-23 22:47:08,049 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:47:08,049 - yfinance - DEBUG - Entering get()
+2024-05-23 22:47:08,049 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:47:08,049 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:47:08,049 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:47:08,049 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:47:08,049 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:47:08,050 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:47:08,050 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:47:08,050 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:47:08,050 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:47:08,051 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:47:08,118 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:47:08,118 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:47:08,118 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:47:08,118 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:47:08,119 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:47:08,250 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:47:08,251 - yfinance - DEBUG - response code=200
+2024-05-23 22:47:08,251 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:47:08,252 - yfinance - DEBUG - Entering get()
+2024-05-23 22:47:08,252 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:47:08,252 - yfinance - DEBUG - params=None
+2024-05-23 22:47:08,252 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:47:08,252 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:47:08,252 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:47:08,252 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:47:08,252 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:47:08,252 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:47:08,252 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:47:08,309 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:47:08,309 - yfinance - DEBUG - response code=200
+2024-05-23 22:47:08,309 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:47:40,772 - logger - DEBUG - This is a debug message
+2024-05-23 22:47:40,772 - logger - INFO - This is an info message
+2024-05-23 22:47:40,772 - logger - WARNING - This is a warning message
+2024-05-23 22:47:40,772 - logger - ERROR - This is an error message
+2024-05-23 22:47:40,772 - logger - CRITICAL - This is a critical message
+2024-05-23 22:47:40,772 - logger - INFO - Starting the application
+2024-05-23 22:47:40,805 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:47:40,805 - yfinance - DEBUG - Entering get()
+2024-05-23 22:47:40,805 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:47:40,805 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:47:40,805 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:47:40,805 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:47:40,805 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:47:40,806 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:47:40,806 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:47:40,806 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:47:40,806 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:47:40,808 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:47:40,924 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:47:40,924 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:47:40,924 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:47:40,924 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:47:40,925 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:47:41,012 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:47:41,013 - yfinance - DEBUG - response code=200
+2024-05-23 22:47:41,013 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:47:41,014 - yfinance - DEBUG - Entering get()
+2024-05-23 22:47:41,014 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:47:41,014 - yfinance - DEBUG - params=None
+2024-05-23 22:47:41,014 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:47:41,014 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:47:41,014 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:47:41,014 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:47:41,014 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:47:41,014 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:47:41,014 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:47:41,100 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:47:41,101 - yfinance - DEBUG - response code=200
+2024-05-23 22:47:41,101 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:48:06,107 - logger - DEBUG - This is a debug message
+2024-05-23 22:48:06,107 - logger - INFO - This is an info message
+2024-05-23 22:48:06,107 - logger - WARNING - This is a warning message
+2024-05-23 22:48:06,107 - logger - ERROR - This is an error message
+2024-05-23 22:48:06,107 - logger - CRITICAL - This is a critical message
+2024-05-23 22:48:06,107 - logger - INFO - Starting the application
+2024-05-23 22:48:06,140 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:48:06,140 - yfinance - DEBUG - Entering get()
+2024-05-23 22:48:06,140 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:48:06,140 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:48:06,140 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:48:06,140 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:48:06,140 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,140 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:48:06,141 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:48:06,141 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:48:06,141 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:48:06,142 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:48:06,232 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:48:06,232 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:48:06,232 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,233 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:48:06,233 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:48:06,334 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:48:06,334 - yfinance - DEBUG - response code=200
+2024-05-23 22:48:06,334 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:48:06,335 - yfinance - DEBUG - Entering get()
+2024-05-23 22:48:06,335 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:48:06,335 - yfinance - DEBUG - params=None
+2024-05-23 22:48:06,335 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:48:06,335 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:48:06,335 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,335 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:48:06,335 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:48:06,335 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,335 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:48:06,396 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:48:06,396 - yfinance - DEBUG - response code=200
+2024-05-23 22:48:06,396 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:48:06,397 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:48:06,397 - yfinance - DEBUG - Entering get()
+2024-05-23 22:48:06,397 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:48:06,397 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:48:06,397 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:48:06,397 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:48:06,397 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,397 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:48:06,397 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:48:06,397 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,397 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:48:06,479 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:48:06,480 - yfinance - DEBUG - response code=200
+2024-05-23 22:48:06,480 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:48:06,481 - yfinance - DEBUG - Entering get()
+2024-05-23 22:48:06,481 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:48:06,481 - yfinance - DEBUG - params=None
+2024-05-23 22:48:06,481 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:48:06,481 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:48:06,481 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,481 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:48:06,481 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:48:06,481 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:48:06,481 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:48:06,559 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:48:06,559 - yfinance - DEBUG - response code=200
+2024-05-23 22:48:06,559 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:48:06,568 - logger - INFO - Finished the application
+2024-05-23 22:49:10,007 - logger - DEBUG - This is a debug message
+2024-05-23 22:49:10,007 - logger - INFO - This is an info message
+2024-05-23 22:49:10,007 - logger - WARNING - This is a warning message
+2024-05-23 22:49:10,008 - logger - ERROR - This is an error message
+2024-05-23 22:49:10,008 - logger - CRITICAL - This is a critical message
+2024-05-23 22:49:10,008 - logger - INFO - Starting the application
+2024-05-23 22:49:10,048 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:49:10,048 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:10,048 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:49:10,048 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:49:10,048 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:10,048 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:10,048 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,049 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:49:10,049 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:49:10,049 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:49:10,049 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:10,051 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:49:10,181 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:49:10,181 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:49:10,181 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,181 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:10,182 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:49:10,360 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:49:10,361 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:10,361 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:10,363 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:10,363 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:49:10,363 - yfinance - DEBUG - params=None
+2024-05-23 22:49:10,363 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:10,363 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:10,363 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,364 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:10,364 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:10,364 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,364 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:10,400 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:49:10,401 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:10,401 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:10,401 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:49:10,401 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:10,401 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:49:10,401 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:49:10,401 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:10,401 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:10,401 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,401 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:10,401 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:10,401 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,402 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:10,500 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:49:10,501 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:10,501 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:10,502 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:10,503 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:49:10,503 - yfinance - DEBUG - params=None
+2024-05-23 22:49:10,503 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:10,503 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:10,503 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,503 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:10,503 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:10,503 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:10,503 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:10,543 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:49:10,544 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:10,544 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:10,554 - logger - INFO - Finished the application
+2024-05-23 22:49:20,630 - logger - DEBUG - This is a debug message
+2024-05-23 22:49:20,630 - logger - INFO - This is an info message
+2024-05-23 22:49:20,630 - logger - WARNING - This is a warning message
+2024-05-23 22:49:20,630 - logger - ERROR - This is an error message
+2024-05-23 22:49:20,630 - logger - CRITICAL - This is a critical message
+2024-05-23 22:49:20,630 - logger - INFO - Starting the application
+2024-05-23 22:49:20,676 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:49:20,677 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:20,677 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:49:20,677 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:49:20,677 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:20,677 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:20,677 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:20,677 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:49:20,677 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:49:20,677 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:49:20,677 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:20,679 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:49:20,745 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:49:20,745 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:49:20,745 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:20,745 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:20,746 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:49:20,889 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:49:20,890 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:20,890 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:20,891 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:20,891 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:49:20,891 - yfinance - DEBUG - params=None
+2024-05-23 22:49:20,892 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:20,892 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:20,892 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:20,892 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:20,892 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:20,892 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:20,892 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:20,952 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:49:20,953 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:20,953 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:20,955 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:49:20,955 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:20,955 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:49:20,955 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:49:20,955 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:20,955 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:20,955 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:20,955 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:20,955 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:20,955 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:20,955 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:21,062 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:49:21,063 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:21,063 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:21,065 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:21,065 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:49:21,065 - yfinance - DEBUG - params=None
+2024-05-23 22:49:21,065 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:21,065 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:21,065 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:21,065 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:21,065 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:21,065 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:21,065 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:21,126 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:49:21,127 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:21,127 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:21,140 - logger - INFO - Finished the application
+2024-05-23 22:49:39,659 - logger - DEBUG - This is a debug message
+2024-05-23 22:49:39,659 - logger - INFO - This is an info message
+2024-05-23 22:49:39,659 - logger - WARNING - This is a warning message
+2024-05-23 22:49:39,659 - logger - ERROR - This is an error message
+2024-05-23 22:49:39,659 - logger - CRITICAL - This is a critical message
+2024-05-23 22:49:39,659 - logger - INFO - Starting the application
+2024-05-23 22:49:39,700 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:49:39,701 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:39,701 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:49:39,701 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:49:39,701 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:39,701 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:39,701 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:39,701 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:49:39,701 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:49:39,701 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:49:39,701 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:39,703 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:49:39,790 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:49:39,791 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:49:39,791 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:39,791 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:39,792 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:49:39,896 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:49:39,896 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:39,896 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:39,897 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:39,897 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:49:39,897 - yfinance - DEBUG - params=None
+2024-05-23 22:49:39,897 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:39,897 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:39,898 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:39,898 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:39,898 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:39,898 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:39,898 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:39,934 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:49:39,935 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:39,935 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:39,936 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:49:39,936 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:39,936 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:49:39,936 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:49:39,936 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:39,936 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:39,936 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:39,936 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:39,936 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:39,936 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:39,936 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:40,025 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:49:40,025 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:40,025 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:40,025 - yfinance - DEBUG - Entering get()
+2024-05-23 22:49:40,025 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:49:40,025 - yfinance - DEBUG - params=None
+2024-05-23 22:49:40,025 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:49:40,026 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:49:40,026 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:49:40,026 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:49:40,026 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:49:40,026 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:49:40,026 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:49:40,068 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:49:40,068 - yfinance - DEBUG - response code=200
+2024-05-23 22:49:40,068 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:49:40,074 - logger - INFO - Finished the application
+2024-05-23 22:51:10,405 - logger - DEBUG - This is a debug message
+2024-05-23 22:51:10,405 - logger - INFO - This is an info message
+2024-05-23 22:51:10,405 - logger - WARNING - This is a warning message
+2024-05-23 22:51:10,405 - logger - ERROR - This is an error message
+2024-05-23 22:51:10,405 - logger - CRITICAL - This is a critical message
+2024-05-23 22:51:10,405 - logger - INFO - Starting the application
+2024-05-23 22:51:10,440 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:51:10,440 - yfinance - DEBUG - Entering get()
+2024-05-23 22:51:10,440 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:51:10,440 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:51:10,440 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:51:10,440 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:51:10,440 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,441 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:51:10,441 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:51:10,441 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:51:10,441 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:51:10,442 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:51:10,586 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:51:10,586 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:51:10,586 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,586 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:51:10,587 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:51:10,734 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:51:10,735 - yfinance - DEBUG - response code=200
+2024-05-23 22:51:10,735 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:51:10,737 - yfinance - DEBUG - Entering get()
+2024-05-23 22:51:10,738 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:51:10,738 - yfinance - DEBUG - params=None
+2024-05-23 22:51:10,738 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:51:10,738 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:51:10,738 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,738 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:51:10,738 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:51:10,738 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,738 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:51:10,845 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:51:10,846 - yfinance - DEBUG - response code=200
+2024-05-23 22:51:10,846 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:51:10,847 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:51:10,847 - yfinance - DEBUG - Entering get()
+2024-05-23 22:51:10,847 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:51:10,847 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:51:10,847 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:51:10,848 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:51:10,848 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,848 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:51:10,848 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:51:10,848 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,848 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:51:10,957 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:51:10,958 - yfinance - DEBUG - response code=200
+2024-05-23 22:51:10,959 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:51:10,960 - yfinance - DEBUG - Entering get()
+2024-05-23 22:51:10,960 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:51:10,960 - yfinance - DEBUG - params=None
+2024-05-23 22:51:10,960 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:51:10,960 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:51:10,960 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,960 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:51:10,961 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:51:10,961 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:51:10,961 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:51:10,995 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:51:10,996 - yfinance - DEBUG - response code=200
+2024-05-23 22:51:10,996 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:51:11,002 - logger - INFO - Finished the application
+2024-05-23 22:53:18,080 - logger - DEBUG - This is a debug message
+2024-05-23 22:53:18,080 - logger - INFO - This is an info message
+2024-05-23 22:53:18,080 - logger - WARNING - This is a warning message
+2024-05-23 22:53:18,080 - logger - ERROR - This is an error message
+2024-05-23 22:53:18,080 - logger - CRITICAL - This is a critical message
+2024-05-23 22:53:18,080 - logger - INFO - Starting the application
+2024-05-23 22:53:18,114 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:53:18,114 - yfinance - DEBUG - Entering get()
+2024-05-23 22:53:18,114 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:53:18,114 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:53:18,114 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:53:18,114 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:53:18,114 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,115 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:53:18,115 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:53:18,115 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:53:18,115 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:53:18,117 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:53:18,265 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:53:18,266 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:53:18,266 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,266 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:53:18,267 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:53:18,347 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:53:18,348 - yfinance - DEBUG - response code=200
+2024-05-23 22:53:18,348 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:53:18,349 - yfinance - DEBUG - Entering get()
+2024-05-23 22:53:18,349 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:53:18,349 - yfinance - DEBUG - params=None
+2024-05-23 22:53:18,349 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:53:18,349 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:53:18,349 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,349 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:53:18,349 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:53:18,349 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,349 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:53:18,442 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:53:18,442 - yfinance - DEBUG - response code=200
+2024-05-23 22:53:18,442 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:53:18,443 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:53:18,443 - yfinance - DEBUG - Entering get()
+2024-05-23 22:53:18,443 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:53:18,443 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:53:18,444 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:53:18,444 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:53:18,444 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,444 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:53:18,444 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:53:18,444 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,444 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:53:18,494 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:53:18,495 - yfinance - DEBUG - response code=200
+2024-05-23 22:53:18,495 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:53:18,495 - yfinance - DEBUG - Entering get()
+2024-05-23 22:53:18,495 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:53:18,495 - yfinance - DEBUG - params=None
+2024-05-23 22:53:18,495 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:53:18,495 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:53:18,496 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,496 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:53:18,496 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:53:18,496 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:53:18,496 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:53:18,576 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:53:18,577 - yfinance - DEBUG - response code=200
+2024-05-23 22:53:18,577 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:53:18,588 - logger - INFO - Finished the application
+2024-05-23 22:55:39,723 - logger - DEBUG - This is a debug message
+2024-05-23 22:55:39,724 - logger - INFO - This is an info message
+2024-05-23 22:55:39,724 - logger - WARNING - This is a warning message
+2024-05-23 22:55:39,724 - logger - ERROR - This is an error message
+2024-05-23 22:55:39,724 - logger - CRITICAL - This is a critical message
+2024-05-23 22:55:39,724 - logger - INFO - Starting the application
+2024-05-23 22:55:39,757 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:55:39,757 - yfinance - DEBUG - Entering get()
+2024-05-23 22:55:39,757 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:55:39,757 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:55:39,757 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:55:39,757 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:55:39,757 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:55:39,758 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:55:39,758 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:55:39,758 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:55:39,758 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:55:39,760 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:55:39,876 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:55:39,876 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:55:39,876 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:55:39,876 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:55:39,877 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:55:40,014 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:55:40,016 - yfinance - DEBUG - response code=200
+2024-05-23 22:55:40,016 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:55:40,018 - yfinance - DEBUG - Entering get()
+2024-05-23 22:55:40,018 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:55:40,019 - yfinance - DEBUG - params=None
+2024-05-23 22:55:40,019 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:55:40,019 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:55:40,019 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:55:40,019 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:55:40,019 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:55:40,019 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:55:40,019 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:55:40,079 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:55:40,080 - yfinance - DEBUG - response code=200
+2024-05-23 22:55:40,080 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:55:40,081 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:55:40,081 - yfinance - DEBUG - Entering get()
+2024-05-23 22:55:40,081 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:55:40,081 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:55:40,081 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:55:40,081 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:55:40,081 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:55:40,081 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:55:40,081 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:55:40,081 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:55:40,081 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:55:40,188 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:55:40,189 - yfinance - DEBUG - response code=200
+2024-05-23 22:55:40,189 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:55:40,190 - yfinance - DEBUG - Entering get()
+2024-05-23 22:55:40,190 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:55:40,191 - yfinance - DEBUG - params=None
+2024-05-23 22:55:40,191 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:55:40,191 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:55:40,191 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:55:40,191 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:55:40,191 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:55:40,191 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:55:40,191 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:55:40,271 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:55:40,272 - yfinance - DEBUG - response code=200
+2024-05-23 22:55:40,272 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:55:40,285 - logger - INFO - Finished the application
+2024-05-23 22:56:33,330 - logger - DEBUG - This is a debug message
+2024-05-23 22:56:33,330 - logger - INFO - This is an info message
+2024-05-23 22:56:33,330 - logger - WARNING - This is a warning message
+2024-05-23 22:56:33,330 - logger - ERROR - This is an error message
+2024-05-23 22:56:33,330 - logger - CRITICAL - This is a critical message
+2024-05-23 22:56:33,330 - logger - INFO - Starting the application
+2024-05-23 22:56:33,370 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:56:33,370 - yfinance - DEBUG - Entering get()
+2024-05-23 22:56:33,370 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:56:33,370 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:56:33,370 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:56:33,370 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:56:33,370 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,370 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:56:33,370 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:56:33,371 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:56:33,371 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:56:33,372 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:56:33,436 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:56:33,436 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:56:33,436 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,436 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:56:33,437 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:56:33,505 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:56:33,505 - yfinance - DEBUG - response code=200
+2024-05-23 22:56:33,505 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:56:33,506 - yfinance - DEBUG - Entering get()
+2024-05-23 22:56:33,506 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:56:33,506 - yfinance - DEBUG - params=None
+2024-05-23 22:56:33,506 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:56:33,506 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:56:33,506 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,506 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:56:33,506 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:56:33,506 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,506 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:56:33,539 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:56:33,540 - yfinance - DEBUG - response code=200
+2024-05-23 22:56:33,540 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:56:33,540 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:56:33,540 - yfinance - DEBUG - Entering get()
+2024-05-23 22:56:33,540 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:56:33,540 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:56:33,540 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:56:33,540 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:56:33,540 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,540 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:56:33,540 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:56:33,541 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,541 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:56:33,583 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:56:33,583 - yfinance - DEBUG - response code=200
+2024-05-23 22:56:33,583 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:56:33,584 - yfinance - DEBUG - Entering get()
+2024-05-23 22:56:33,584 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:56:33,584 - yfinance - DEBUG - params=None
+2024-05-23 22:56:33,584 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:56:33,584 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:56:33,584 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,584 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:56:33,584 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:56:33,584 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:56:33,584 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:56:33,618 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:56:33,619 - yfinance - DEBUG - response code=200
+2024-05-23 22:56:33,619 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:56:33,626 - logger - INFO - Finished the application
+2024-05-23 22:57:10,711 - logger - DEBUG - This is a debug message
+2024-05-23 22:57:10,712 - logger - INFO - This is an info message
+2024-05-23 22:57:10,712 - logger - WARNING - This is a warning message
+2024-05-23 22:57:10,712 - logger - ERROR - This is an error message
+2024-05-23 22:57:10,712 - logger - CRITICAL - This is a critical message
+2024-05-23 22:57:10,712 - logger - INFO - Starting the application
+2024-05-23 22:57:10,752 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:57:10,752 - yfinance - DEBUG - Entering get()
+2024-05-23 22:57:10,752 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 22:57:10,752 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 22:57:10,752 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:57:10,752 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:57:10,752 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:57:10,752 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 22:57:10,753 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 22:57:10,753 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 22:57:10,753 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:57:10,757 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 22:57:10,855 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 22:57:10,855 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 22:57:10,855 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:57:10,855 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:57:10,856 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 22:57:10,920 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 22:57:11,152 - yfinance - DEBUG - response code=200
+2024-05-23 22:57:11,153 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:57:11,155 - yfinance - DEBUG - Entering get()
+2024-05-23 22:57:11,155 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:57:11,155 - yfinance - DEBUG - params=None
+2024-05-23 22:57:11,156 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:57:11,156 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:57:11,156 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:57:11,156 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:57:11,156 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:57:11,156 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:57:11,156 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:57:11,243 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:57:11,243 - yfinance - DEBUG - response code=200
+2024-05-23 22:57:11,243 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:57:11,244 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:57:11,244 - yfinance - DEBUG - Entering get()
+2024-05-23 22:57:11,244 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 22:57:11,244 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 22:57:11,244 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:57:11,244 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:57:11,244 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:57:11,244 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:57:11,244 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:57:11,245 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:57:11,245 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:57:11,281 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 22:57:11,282 - yfinance - DEBUG - response code=200
+2024-05-23 22:57:11,282 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:57:11,282 - yfinance - DEBUG - Entering get()
+2024-05-23 22:57:11,282 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 22:57:11,282 - yfinance - DEBUG - params=None
+2024-05-23 22:57:11,282 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 22:57:11,282 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 22:57:11,282 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 22:57:11,282 - yfinance - DEBUG - reusing cookie
+2024-05-23 22:57:11,282 - yfinance - DEBUG - reusing crumb
+2024-05-23 22:57:11,282 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 22:57:11,282 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 22:57:11,368 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 22:57:11,368 - yfinance - DEBUG - response code=200
+2024-05-23 22:57:11,368 - yfinance - DEBUG - Exiting get()
+2024-05-23 22:57:11,374 - logger - INFO - Finished the application
+2024-05-23 23:02:06,264 - logger - DEBUG - This is a debug message
+2024-05-23 23:02:06,264 - logger - INFO - This is an info message
+2024-05-23 23:02:06,264 - logger - WARNING - This is a warning message
+2024-05-23 23:02:06,264 - logger - ERROR - This is an error message
+2024-05-23 23:02:06,264 - logger - CRITICAL - This is a critical message
+2024-05-23 23:02:06,265 - logger - INFO - Starting the application
+2024-05-23 23:02:06,310 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:02:06,310 - yfinance - DEBUG - Entering get()
+2024-05-23 23:02:06,310 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:02:06,310 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:02:06,310 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:02:06,310 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:02:06,310 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,310 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:02:06,310 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:02:06,310 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:02:06,310 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:02:06,312 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:02:06,449 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:02:06,450 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:02:06,450 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,450 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:02:06,451 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:02:06,553 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:02:06,554 - yfinance - DEBUG - response code=200
+2024-05-23 23:02:06,554 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:02:06,556 - yfinance - DEBUG - Entering get()
+2024-05-23 23:02:06,556 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:02:06,556 - yfinance - DEBUG - params=None
+2024-05-23 23:02:06,556 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:02:06,556 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:02:06,556 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,556 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:02:06,556 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:02:06,557 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,557 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:02:06,599 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:02:06,599 - yfinance - DEBUG - response code=200
+2024-05-23 23:02:06,599 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:02:06,600 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:02:06,600 - yfinance - DEBUG - Entering get()
+2024-05-23 23:02:06,600 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:02:06,600 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:02:06,600 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:02:06,600 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:02:06,600 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,600 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:02:06,600 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:02:06,600 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,600 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:02:06,647 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:02:06,648 - yfinance - DEBUG - response code=200
+2024-05-23 23:02:06,648 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:02:06,649 - yfinance - DEBUG - Entering get()
+2024-05-23 23:02:06,649 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:02:06,649 - yfinance - DEBUG - params=None
+2024-05-23 23:02:06,649 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:02:06,649 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:02:06,649 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,649 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:02:06,649 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:02:06,649 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:02:06,649 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:02:06,688 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:02:06,688 - yfinance - DEBUG - response code=200
+2024-05-23 23:02:06,688 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:30,069 - logger - DEBUG - This is a debug message
+2024-05-23 23:04:30,070 - logger - INFO - This is an info message
+2024-05-23 23:04:30,070 - logger - WARNING - This is a warning message
+2024-05-23 23:04:30,070 - logger - ERROR - This is an error message
+2024-05-23 23:04:30,070 - logger - CRITICAL - This is a critical message
+2024-05-23 23:04:30,070 - logger - INFO - Starting the application
+2024-05-23 23:04:30,118 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:04:30,119 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:30,119 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:04:30,119 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:04:30,119 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:30,119 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:30,119 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,119 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:04:30,119 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:04:30,119 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:04:30,119 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:30,121 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:04:30,238 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:04:30,238 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:04:30,238 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,239 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:30,239 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:04:30,380 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:04:30,381 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:30,381 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:30,383 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:30,383 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:04:30,383 - yfinance - DEBUG - params=None
+2024-05-23 23:04:30,383 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:30,383 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:30,383 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,383 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:30,383 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:04:30,383 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,383 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:30,418 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:04:30,418 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:30,418 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:30,419 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:04:30,419 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:30,419 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:04:30,419 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:04:30,419 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:30,419 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:30,419 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,419 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:30,419 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:04:30,419 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,419 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:30,544 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:04:30,544 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:30,544 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:30,545 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:30,545 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:04:30,545 - yfinance - DEBUG - params=None
+2024-05-23 23:04:30,545 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:30,545 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:30,545 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,545 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:30,545 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:04:30,545 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:30,545 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:30,584 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:04:30,585 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:30,585 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:54,411 - logger - DEBUG - This is a debug message
+2024-05-23 23:04:54,412 - logger - INFO - This is an info message
+2024-05-23 23:04:54,412 - logger - WARNING - This is a warning message
+2024-05-23 23:04:54,412 - logger - ERROR - This is an error message
+2024-05-23 23:04:54,412 - logger - CRITICAL - This is a critical message
+2024-05-23 23:04:54,412 - logger - INFO - Starting the application
+2024-05-23 23:04:54,464 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:04:54,464 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:54,464 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:04:54,464 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:04:54,464 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:54,464 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:54,464 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,465 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:04:54,465 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:04:54,465 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:04:54,465 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:54,467 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:04:54,547 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:04:54,547 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:04:54,547 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,547 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:54,548 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:04:54,736 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:04:54,737 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:54,737 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:54,738 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:54,738 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:04:54,738 - yfinance - DEBUG - params=None
+2024-05-23 23:04:54,738 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:54,738 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:54,738 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,738 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:54,738 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:04:54,738 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,738 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:54,778 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:04:54,778 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:54,778 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:54,779 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:04:54,779 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:54,779 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:04:54,779 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:04:54,779 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:54,779 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:54,779 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,779 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:54,779 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:04:54,779 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,779 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:54,819 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:04:54,819 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:54,819 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:04:54,820 - yfinance - DEBUG - Entering get()
+2024-05-23 23:04:54,820 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:04:54,820 - yfinance - DEBUG - params=None
+2024-05-23 23:04:54,820 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:04:54,820 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:04:54,820 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,820 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:04:54,820 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:04:54,820 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:04:54,820 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:04:54,926 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:04:54,926 - yfinance - DEBUG - response code=200
+2024-05-23 23:04:54,926 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:05:49,800 - logger - DEBUG - This is a debug message
+2024-05-23 23:05:49,800 - logger - INFO - This is an info message
+2024-05-23 23:05:49,800 - logger - WARNING - This is a warning message
+2024-05-23 23:05:49,800 - logger - ERROR - This is an error message
+2024-05-23 23:05:49,800 - logger - CRITICAL - This is a critical message
+2024-05-23 23:05:49,800 - logger - INFO - Starting the application
+2024-05-23 23:05:49,837 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:05:49,837 - yfinance - DEBUG - Entering get()
+2024-05-23 23:05:49,837 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:05:49,837 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:05:49,837 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:05:49,837 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:05:49,837 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:05:49,837 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:05:49,837 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:05:49,837 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:05:49,838 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:05:49,840 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:05:49,946 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:05:49,947 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:05:49,947 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:05:49,947 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:05:49,948 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:05:50,070 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:05:50,071 - yfinance - DEBUG - response code=200
+2024-05-23 23:05:50,071 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:05:50,072 - yfinance - DEBUG - Entering get()
+2024-05-23 23:05:50,072 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:05:50,072 - yfinance - DEBUG - params=None
+2024-05-23 23:05:50,072 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:05:50,072 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:05:50,072 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:05:50,072 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:05:50,072 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:05:50,072 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:05:50,072 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:05:50,108 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:05:50,108 - yfinance - DEBUG - response code=200
+2024-05-23 23:05:50,108 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:05:50,109 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:05:50,109 - yfinance - DEBUG - Entering get()
+2024-05-23 23:05:50,109 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:05:50,109 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:05:50,109 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:05:50,109 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:05:50,109 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:05:50,109 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:05:50,109 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:05:50,109 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:05:50,109 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:05:50,191 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:05:50,192 - yfinance - DEBUG - response code=200
+2024-05-23 23:05:50,192 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:05:50,192 - yfinance - DEBUG - Entering get()
+2024-05-23 23:05:50,192 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:05:50,192 - yfinance - DEBUG - params=None
+2024-05-23 23:05:50,192 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:05:50,192 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:05:50,192 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:05:50,192 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:05:50,192 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:05:50,192 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:05:50,192 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:05:50,283 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:05:50,284 - yfinance - DEBUG - response code=200
+2024-05-23 23:05:50,284 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:21,330 - logger - DEBUG - This is a debug message
+2024-05-23 23:06:21,331 - logger - INFO - This is an info message
+2024-05-23 23:06:21,331 - logger - WARNING - This is a warning message
+2024-05-23 23:06:21,331 - logger - ERROR - This is an error message
+2024-05-23 23:06:21,331 - logger - CRITICAL - This is a critical message
+2024-05-23 23:06:21,331 - logger - INFO - Starting the application
+2024-05-23 23:06:21,375 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:06:21,375 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:21,375 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:06:21,375 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:06:21,375 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:21,375 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:21,375 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,375 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:06:21,375 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:06:21,375 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:06:21,376 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:21,377 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:06:21,487 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:06:21,488 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:06:21,488 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,488 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:21,489 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:06:21,579 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:06:21,580 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:21,581 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:21,582 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:21,582 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:06:21,582 - yfinance - DEBUG - params=None
+2024-05-23 23:06:21,582 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:21,583 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:21,583 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,583 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:21,583 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:06:21,583 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,583 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:21,624 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:06:21,624 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:21,624 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:21,625 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:06:21,625 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:21,625 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:06:21,626 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:06:21,626 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:21,626 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:21,626 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,626 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:21,626 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:06:21,626 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,626 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:21,723 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:06:21,724 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:21,724 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:21,726 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:21,726 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:06:21,726 - yfinance - DEBUG - params=None
+2024-05-23 23:06:21,726 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:21,726 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:21,726 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,726 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:21,726 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:06:21,726 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:21,726 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:21,833 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:06:21,834 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:21,835 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:32,454 - logger - DEBUG - This is a debug message
+2024-05-23 23:06:32,454 - logger - INFO - This is an info message
+2024-05-23 23:06:32,454 - logger - WARNING - This is a warning message
+2024-05-23 23:06:32,454 - logger - ERROR - This is an error message
+2024-05-23 23:06:32,454 - logger - CRITICAL - This is a critical message
+2024-05-23 23:06:32,454 - logger - INFO - Starting the application
+2024-05-23 23:06:32,489 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:06:32,489 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:32,489 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:06:32,489 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:06:32,489 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:32,489 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:32,489 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,489 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:06:32,490 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:06:32,490 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:06:32,490 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:32,491 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:06:32,559 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:06:32,559 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:06:32,559 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,559 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:32,560 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:06:32,656 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:06:32,656 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:32,656 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:32,657 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:32,657 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:06:32,657 - yfinance - DEBUG - params=None
+2024-05-23 23:06:32,657 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:32,657 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:32,657 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,657 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:32,657 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:06:32,657 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,657 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:32,719 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:06:32,719 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:32,719 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:32,720 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:06:32,720 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:32,720 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:06:32,720 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:06:32,720 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:32,720 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:32,720 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,720 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:32,720 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:06:32,720 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,720 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:32,767 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:06:32,767 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:32,767 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:06:32,768 - yfinance - DEBUG - Entering get()
+2024-05-23 23:06:32,768 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:06:32,768 - yfinance - DEBUG - params=None
+2024-05-23 23:06:32,768 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:06:32,768 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:06:32,768 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,768 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:06:32,768 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:06:32,768 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:06:32,768 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:06:32,881 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:06:32,881 - yfinance - DEBUG - response code=200
+2024-05-23 23:06:32,881 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:03,396 - logger - DEBUG - This is a debug message
+2024-05-23 23:07:03,396 - logger - INFO - This is an info message
+2024-05-23 23:07:03,396 - logger - WARNING - This is a warning message
+2024-05-23 23:07:03,396 - logger - ERROR - This is an error message
+2024-05-23 23:07:03,396 - logger - CRITICAL - This is a critical message
+2024-05-23 23:07:03,396 - logger - INFO - Starting the application
+2024-05-23 23:07:03,434 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:07:03,434 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:03,434 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:07:03,434 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:07:03,434 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:03,434 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:03,434 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,435 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:07:03,435 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:07:03,435 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:07:03,435 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:03,437 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:07:03,579 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:07:03,579 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:07:03,579 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,579 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:03,580 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:07:03,705 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:07:03,706 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:03,706 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:03,708 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:03,708 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:07:03,708 - yfinance - DEBUG - params=None
+2024-05-23 23:07:03,708 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:03,708 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:03,708 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,708 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:03,708 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:07:03,709 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,709 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:03,822 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:07:03,823 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:03,824 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:03,826 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:07:03,826 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:03,827 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:07:03,827 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:07:03,827 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:03,827 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:03,827 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,827 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:03,828 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:07:03,828 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,828 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:03,868 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:07:03,869 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:03,869 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:03,870 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:03,870 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:07:03,870 - yfinance - DEBUG - params=None
+2024-05-23 23:07:03,870 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:03,870 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:03,870 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,871 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:03,871 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:07:03,871 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:03,871 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:03,934 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:07:03,934 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:03,935 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:08,274 - logger - DEBUG - This is a debug message
+2024-05-23 23:07:08,274 - logger - INFO - This is an info message
+2024-05-23 23:07:08,274 - logger - WARNING - This is a warning message
+2024-05-23 23:07:08,274 - logger - ERROR - This is an error message
+2024-05-23 23:07:08,274 - logger - CRITICAL - This is a critical message
+2024-05-23 23:07:08,274 - logger - INFO - Starting the application
+2024-05-23 23:07:50,516 - logger - DEBUG - This is a debug message
+2024-05-23 23:07:50,517 - logger - INFO - This is an info message
+2024-05-23 23:07:50,517 - logger - WARNING - This is a warning message
+2024-05-23 23:07:50,517 - logger - ERROR - This is an error message
+2024-05-23 23:07:50,517 - logger - CRITICAL - This is a critical message
+2024-05-23 23:07:50,517 - logger - INFO - Starting the application
+2024-05-23 23:07:50,563 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:07:50,563 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:50,563 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:07:50,563 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:07:50,563 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:50,563 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:50,563 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,563 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:07:50,563 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:07:50,564 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:07:50,564 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:50,566 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:07:50,660 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:07:50,660 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:07:50,660 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,660 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:50,661 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:07:50,735 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:07:50,735 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:50,736 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:50,736 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:50,736 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:07:50,736 - yfinance - DEBUG - params=None
+2024-05-23 23:07:50,736 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:50,736 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:50,736 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,736 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:50,736 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:07:50,736 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,737 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:50,774 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:07:50,775 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:50,775 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:50,776 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:07:50,776 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:50,776 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:07:50,776 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:07:50,776 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:50,776 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:50,776 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,776 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:50,776 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:07:50,776 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,776 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:50,819 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:07:50,819 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:50,819 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:50,820 - yfinance - DEBUG - Entering get()
+2024-05-23 23:07:50,820 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:07:50,820 - yfinance - DEBUG - params=None
+2024-05-23 23:07:50,820 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:07:50,820 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:07:50,820 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,820 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:07:50,820 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:07:50,820 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:07:50,820 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:07:50,924 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:07:50,925 - yfinance - DEBUG - response code=200
+2024-05-23 23:07:50,925 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:07:50,965 - logger - INFO - Finished the application
+2024-05-23 23:12:06,733 - logger - DEBUG - This is a debug message
+2024-05-23 23:12:06,734 - logger - INFO - This is an info message
+2024-05-23 23:12:06,734 - logger - WARNING - This is a warning message
+2024-05-23 23:12:06,734 - logger - ERROR - This is an error message
+2024-05-23 23:12:06,734 - logger - CRITICAL - This is a critical message
+2024-05-23 23:12:06,734 - logger - INFO - Starting the application
+2024-05-23 23:12:06,765 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:12:06,765 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:06,765 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:12:06,765 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:12:06,765 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:06,765 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:06,765 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:06,766 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:12:06,766 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:12:06,766 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:12:06,766 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:06,768 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:12:06,834 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:12:06,834 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:12:06,834 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:06,834 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:06,835 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:12:06,992 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:12:06,993 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:06,994 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:06,995 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:06,995 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:12:06,995 - yfinance - DEBUG - params=None
+2024-05-23 23:12:06,995 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:06,996 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:06,996 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:06,996 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:06,996 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:12:06,996 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:06,996 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:07,032 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:12:07,032 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:07,033 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:07,034 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:12:07,034 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:07,034 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:12:07,034 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:12:07,034 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:07,034 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:07,034 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:07,034 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:07,034 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:12:07,034 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:07,034 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:07,131 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:12:07,131 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:07,131 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:07,132 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:07,132 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:12:07,132 - yfinance - DEBUG - params=None
+2024-05-23 23:12:07,132 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:07,132 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:07,132 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:07,132 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:07,132 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:12:07,132 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:07,132 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:07,213 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:12:07,214 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:07,214 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:38,788 - logger - DEBUG - This is a debug message
+2024-05-23 23:12:38,788 - logger - INFO - This is an info message
+2024-05-23 23:12:38,788 - logger - WARNING - This is a warning message
+2024-05-23 23:12:38,788 - logger - ERROR - This is an error message
+2024-05-23 23:12:38,788 - logger - CRITICAL - This is a critical message
+2024-05-23 23:12:38,788 - logger - INFO - Starting the application
+2024-05-23 23:12:38,850 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:12:38,851 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:38,851 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:12:38,851 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:12:38,851 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:38,851 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:38,851 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:38,851 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:12:38,851 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:12:38,851 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:12:38,851 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:38,853 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:12:38,944 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:12:38,944 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:12:38,944 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:38,944 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:38,945 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:12:39,040 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:12:39,040 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:39,040 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:39,041 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:39,041 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:12:39,041 - yfinance - DEBUG - params=None
+2024-05-23 23:12:39,041 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:39,041 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:39,041 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:39,041 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:39,041 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:12:39,041 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:39,041 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:39,074 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:12:39,074 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:39,074 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:39,075 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:12:39,075 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:39,075 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:12:39,075 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:12:39,075 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:39,075 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:39,075 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:39,075 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:39,075 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:12:39,075 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:39,075 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:39,145 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:12:39,146 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:39,146 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:12:39,147 - yfinance - DEBUG - Entering get()
+2024-05-23 23:12:39,147 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:12:39,147 - yfinance - DEBUG - params=None
+2024-05-23 23:12:39,147 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:12:39,147 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:12:39,147 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:12:39,147 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:12:39,148 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:12:39,148 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:12:39,148 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:12:39,219 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:12:39,219 - yfinance - DEBUG - response code=200
+2024-05-23 23:12:39,220 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:13:32,690 - logger - DEBUG - This is a debug message
+2024-05-23 23:13:32,690 - logger - INFO - This is an info message
+2024-05-23 23:13:32,690 - logger - WARNING - This is a warning message
+2024-05-23 23:13:32,690 - logger - ERROR - This is an error message
+2024-05-23 23:13:32,690 - logger - CRITICAL - This is a critical message
+2024-05-23 23:13:32,690 - logger - INFO - Starting the application
+2024-05-23 23:13:32,728 - logger - INFO - Database already exists
+2024-05-23 23:13:32,728 - logger - INFO - Finished the application
+2024-05-23 23:13:47,167 - logger - DEBUG - This is a debug message
+2024-05-23 23:13:47,167 - logger - INFO - This is an info message
+2024-05-23 23:13:47,167 - logger - WARNING - This is a warning message
+2024-05-23 23:13:47,167 - logger - ERROR - This is an error message
+2024-05-23 23:13:47,167 - logger - CRITICAL - This is a critical message
+2024-05-23 23:13:47,167 - logger - INFO - Starting the application
+2024-05-23 23:13:47,208 - logger - INFO - Database already exists
+2024-05-23 23:13:47,208 - logger - INFO - Finished the application
+2024-05-23 23:16:17,123 - logger - DEBUG - This is a debug message
+2024-05-23 23:16:17,124 - logger - INFO - This is an info message
+2024-05-23 23:16:17,124 - logger - WARNING - This is a warning message
+2024-05-23 23:16:17,124 - logger - ERROR - This is an error message
+2024-05-23 23:16:17,124 - logger - CRITICAL - This is a critical message
+2024-05-23 23:16:17,124 - logger - INFO - Starting the application
+2024-05-23 23:16:17,161 - logger - INFO - Database already exists
+2024-05-23 23:16:17,161 - logger - INFO - Finished the application
+2024-05-23 23:17:14,578 - logger - DEBUG - This is a debug message
+2024-05-23 23:17:14,578 - logger - INFO - This is an info message
+2024-05-23 23:17:14,578 - logger - WARNING - This is a warning message
+2024-05-23 23:17:14,578 - logger - ERROR - This is an error message
+2024-05-23 23:17:14,578 - logger - CRITICAL - This is a critical message
+2024-05-23 23:17:14,578 - logger - INFO - Starting the application
+2024-05-23 23:17:14,612 - logger - INFO - Database already exists
+2024-05-23 23:17:14,612 - logger - INFO - Finished the application
+2024-05-23 23:17:43,599 - logger - DEBUG - This is a debug message
+2024-05-23 23:17:43,599 - logger - INFO - This is an info message
+2024-05-23 23:17:43,599 - logger - WARNING - This is a warning message
+2024-05-23 23:17:43,599 - logger - ERROR - This is an error message
+2024-05-23 23:17:43,599 - logger - CRITICAL - This is a critical message
+2024-05-23 23:17:43,599 - logger - INFO - Starting the application
+2024-05-23 23:17:43,629 - logger - INFO - Database already exists
+2024-05-23 23:17:43,629 - logger - INFO - Finished the application
+2024-05-23 23:17:59,269 - logger - DEBUG - This is a debug message
+2024-05-23 23:17:59,269 - logger - INFO - This is an info message
+2024-05-23 23:17:59,269 - logger - WARNING - This is a warning message
+2024-05-23 23:17:59,269 - logger - ERROR - This is an error message
+2024-05-23 23:17:59,269 - logger - CRITICAL - This is a critical message
+2024-05-23 23:17:59,269 - logger - INFO - Starting the application
+2024-05-23 23:17:59,296 - logger - INFO - Database already exists
+2024-05-23 23:17:59,297 - logger - INFO - Finished the application
+2024-05-23 23:18:10,406 - logger - DEBUG - This is a debug message
+2024-05-23 23:18:10,406 - logger - INFO - This is an info message
+2024-05-23 23:18:10,406 - logger - WARNING - This is a warning message
+2024-05-23 23:18:10,406 - logger - ERROR - This is an error message
+2024-05-23 23:18:10,406 - logger - CRITICAL - This is a critical message
+2024-05-23 23:18:10,406 - logger - INFO - Starting the application
+2024-05-23 23:18:10,437 - logger - INFO - Database already exists
+2024-05-23 23:18:10,437 - logger - INFO - Finished the application
+2024-05-23 23:18:20,948 - logger - DEBUG - This is a debug message
+2024-05-23 23:18:20,951 - logger - INFO - This is an info message
+2024-05-23 23:18:20,951 - logger - WARNING - This is a warning message
+2024-05-23 23:18:20,951 - logger - ERROR - This is an error message
+2024-05-23 23:18:20,951 - logger - CRITICAL - This is a critical message
+2024-05-23 23:18:20,951 - logger - INFO - Starting the application
+2024-05-23 23:18:20,988 - logger - INFO - Database already exists
+2024-05-23 23:18:20,988 - logger - INFO - Finished the application
+2024-05-23 23:18:40,910 - logger - DEBUG - This is a debug message
+2024-05-23 23:18:40,910 - logger - INFO - This is an info message
+2024-05-23 23:18:40,910 - logger - WARNING - This is a warning message
+2024-05-23 23:18:40,910 - logger - ERROR - This is an error message
+2024-05-23 23:18:40,910 - logger - CRITICAL - This is a critical message
+2024-05-23 23:18:40,910 - logger - INFO - Starting the application
+2024-05-23 23:18:40,997 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:18:40,997 - yfinance - DEBUG - Entering get()
+2024-05-23 23:18:40,997 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:18:40,997 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:18:40,997 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:18:40,997 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:18:40,997 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:18:40,998 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:18:40,998 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:18:40,998 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:18:40,998 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:18:41,000 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:18:41,125 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:18:41,125 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:18:41,125 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,126 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:18:41,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:18:41,195 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:18:41,196 - yfinance - DEBUG - response code=200
+2024-05-23 23:18:41,196 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:18:41,197 - yfinance - DEBUG - Entering get()
+2024-05-23 23:18:41,197 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:18:41,197 - yfinance - DEBUG - params=None
+2024-05-23 23:18:41,197 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:18:41,197 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:18:41,197 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,197 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:18:41,197 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:18:41,197 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,197 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:18:41,261 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:18:41,262 - yfinance - DEBUG - response code=200
+2024-05-23 23:18:41,262 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:18:41,263 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:18:41,263 - yfinance - DEBUG - Entering get()
+2024-05-23 23:18:41,263 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:18:41,263 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:18:41,263 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:18:41,263 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:18:41,263 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,263 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:18:41,263 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:18:41,263 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,263 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:18:41,352 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:18:41,353 - yfinance - DEBUG - response code=200
+2024-05-23 23:18:41,353 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:18:41,353 - yfinance - DEBUG - Entering get()
+2024-05-23 23:18:41,353 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:18:41,353 - yfinance - DEBUG - params=None
+2024-05-23 23:18:41,354 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:18:41,354 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:18:41,354 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,354 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:18:41,354 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:18:41,354 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:18:41,354 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:18:41,414 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:18:41,415 - yfinance - DEBUG - response code=200
+2024-05-23 23:18:41,415 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:18:41,465 - logger - INFO - Finished the application
+2024-05-23 23:18:51,116 - logger - DEBUG - This is a debug message
+2024-05-23 23:18:51,117 - logger - INFO - This is an info message
+2024-05-23 23:18:51,117 - logger - WARNING - This is a warning message
+2024-05-23 23:18:51,117 - logger - ERROR - This is an error message
+2024-05-23 23:18:51,117 - logger - CRITICAL - This is a critical message
+2024-05-23 23:18:51,117 - logger - INFO - Starting the application
+2024-05-23 23:18:51,148 - logger - INFO - Database already exists
+2024-05-23 23:18:51,148 - logger - INFO - Finished the application
+2024-05-23 23:19:51,514 - logger - DEBUG - This is a debug message
+2024-05-23 23:19:51,514 - logger - INFO - This is an info message
+2024-05-23 23:19:51,514 - logger - WARNING - This is a warning message
+2024-05-23 23:19:51,514 - logger - ERROR - This is an error message
+2024-05-23 23:19:51,514 - logger - CRITICAL - This is a critical message
+2024-05-23 23:19:51,514 - logger - INFO - Starting the application
+2024-05-23 23:19:51,546 - logger - INFO - Tables already exist
+2024-05-23 23:19:51,546 - logger - INFO - Finished the application
+2024-05-23 23:20:19,002 - logger - INFO - Starting the application
+2024-05-23 23:20:19,041 - logger - INFO - Tables already exist
+2024-05-23 23:20:19,042 - logger - INFO - Finished the application
+2024-05-23 23:20:29,126 - logger - INFO - Starting the application
+2024-05-23 23:20:29,164 - logger - INFO - Creating tables
+2024-05-23 23:20:29,210 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:20:29,210 - yfinance - DEBUG - Entering get()
+2024-05-23 23:20:29,210 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL
+2024-05-23 23:20:29,210 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'AAPL'}
+2024-05-23 23:20:29,210 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:20:29,210 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:20:29,210 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,210 - peewee - DEBUG - ('CREATE TABLE IF NOT EXISTS "_cookieschema" ("strategy" VARCHAR(255) NOT NULL PRIMARY KEY, "fetch_date" DATETIME NOT NULL, "cookie_bytes" BLOB NOT NULL) WITHOUT ROWID', [])
+2024-05-23 23:20:29,210 - peewee - DEBUG - ('SELECT "t1"."strategy", "t1"."fetch_date", "t1"."cookie_bytes" FROM "_cookieschema" AS "t1" WHERE ("t1"."strategy" = ?) LIMIT ? OFFSET ?', ['basic', 1, 0])
+2024-05-23 23:20:29,211 - yfinance - DEBUG - loaded persistent cookie
+2024-05-23 23:20:29,211 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:20:29,212 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2024-05-23 23:20:29,293 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /v1/test/getcrumb HTTP/1.1" 200 11
+2024-05-23 23:20:29,293 - yfinance - DEBUG - crumb = 'JFVPIGKJ1M4'
+2024-05-23 23:20:29,293 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,293 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:20:29,294 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2024-05-23 23:20:29,407 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/AAPL?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=AAPL&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 3050
+2024-05-23 23:20:29,407 - yfinance - DEBUG - response code=200
+2024-05-23 23:20:29,407 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:20:29,408 - yfinance - DEBUG - Entering get()
+2024-05-23 23:20:29,408 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:20:29,408 - yfinance - DEBUG - params=None
+2024-05-23 23:20:29,408 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:20:29,408 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:20:29,408 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,408 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:20:29,408 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:20:29,408 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,408 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:20:29,444 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAPL?symbol=AAPL&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:20:29,444 - yfinance - DEBUG - response code=200
+2024-05-23 23:20:29,444 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:20:29,445 - yfinance - DEBUG - get_raw_json(): https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:20:29,445 - yfinance - DEBUG - Entering get()
+2024-05-23 23:20:29,445 - yfinance - DEBUG - url=https://query2.finance.yahoo.com/v10/finance/quoteSummary/MSFT
+2024-05-23 23:20:29,445 - yfinance - DEBUG - params={'modules': 'financialData,quoteType,defaultKeyStatistics,assetProfile,summaryDetail', 'corsDomain': 'finance.yahoo.com', 'formatted': 'false', 'symbol': 'MSFT'}
+2024-05-23 23:20:29,445 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:20:29,445 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:20:29,445 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,445 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:20:29,446 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:20:29,446 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,446 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:20:29,486 - urllib3.connectionpool - DEBUG - https://query2.finance.yahoo.com:443 "GET /v10/finance/quoteSummary/MSFT?modules=financialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&corsDomain=finance.yahoo.com&formatted=false&symbol=MSFT&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 None
+2024-05-23 23:20:29,486 - yfinance - DEBUG - response code=200
+2024-05-23 23:20:29,486 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:20:29,487 - yfinance - DEBUG - Entering get()
+2024-05-23 23:20:29,487 - yfinance - DEBUG - url=https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200
+2024-05-23 23:20:29,487 - yfinance - DEBUG - params=None
+2024-05-23 23:20:29,487 - yfinance - DEBUG -  Entering _get_cookie_and_crumb()
+2024-05-23 23:20:29,487 - yfinance - DEBUG - cookie_mode = 'basic'
+2024-05-23 23:20:29,487 - yfinance - DEBUG -   Entering _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,487 - yfinance - DEBUG - reusing cookie
+2024-05-23 23:20:29,487 - yfinance - DEBUG - reusing crumb
+2024-05-23 23:20:29,487 - yfinance - DEBUG -   Exiting _get_cookie_and_crumb_basic()
+2024-05-23 23:20:29,488 - yfinance - DEBUG -  Exiting _get_cookie_and_crumb()
+2024-05-23 23:20:29,523 - urllib3.connectionpool - DEBUG - https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/MSFT?symbol=MSFT&type=trailingPegRatio&period1=1700784000&period2=1716595200&crumb=JFVPIGKJ1M4 HTTP/1.1" 200 247
+2024-05-23 23:20:29,524 - yfinance - DEBUG - response code=200
+2024-05-23 23:20:29,524 - yfinance - DEBUG - Exiting get()
+2024-05-23 23:20:29,572 - logger - INFO - Finished the application
