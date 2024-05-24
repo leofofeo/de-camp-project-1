@@ -144,8 +144,6 @@ def extract_senator_trades():
         df = df[allowed_columns]
         df.rename(columns={'senator': 'senator_name'}, inplace=True)
         
-        # mask = df['ticker'].str.contains(' ', na=False)
-        # df = df[df['ticker'] != 'N/A']
         df['ticker'].replace('N/A', pd.NA, inplace=True)
         df = df.dropna(subset=['ticker'])
         
