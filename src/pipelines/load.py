@@ -16,3 +16,8 @@ def load_senator_trades(df, engine):
     print("\nLoading data for senator_trades")
     print(df.head(5))
     df.to_sql("senator_trades", con=engine, if_exists="append", index=False)
+
+def load_company_financials(df, engine):
+    print("\nLoading data for company_annual_financial_data")
+    print(df.head(5))
+    df.to_sql("company_annual_financial_data", con=engine, if_exists="append", index=False)

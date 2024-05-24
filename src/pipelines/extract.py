@@ -4,21 +4,25 @@ import pandas as pd
 from .load import (
     load_company_profiles, 
     load_company_historical_data,
-    load_senator_trades
+    load_senator_trades,
+    load_company_financials,
 )
 from data.tickers import TICKERS
 
 def extract_data(engine):
     print("Extracting data")
 
-    df = extract_company_profiles()
-    load_company_profiles(df, engine)
+    # df = extract_company_profiles()
+    # load_company_profiles(df, engine)
 
-    df = extract_company_historical_data()
-    load_company_historical_data(df, engine)
+    # df = extract_company_historical_data()
+    # load_company_historical_data(df, engine)
 
-    df = extract_senator_trades()
-    load_senator_trades(df, engine)
+    # df = extract_senator_trades()
+    # load_senator_trades(df, engine)
+
+    df = extract_company_financials()
+    load_company_financials(df, engine)
 
 
 def extract_company_profiles():
@@ -76,6 +80,35 @@ def extract_company_historical_data():
             continue
     return pd.DataFrame(historical_data)
 
+
+def extract_company_financials():
+    print("Extracting data for company_historical_data")
+    financial_data = []
+
+    for ticker in TICKERS:
+        print("extracting data for ", ticker)
+        company = yf.Ticker(ticker)
+
+        financials = company.financials.T  
+        balance_sheet = company.balance_sheet.T  
+        
+        financials = financials.reindex(index=financials.index.union(balance_sheet.index))
+        balance_sheet = balance_sheet.reindex(index=financials.index)
+        combined_df = pd.concat([financials, balance_sheet], axis=1)
+    
+        combined_data = pd.DataFrame({
+            'year': combined_df.index,
+            'ticker': ticker,
+            'total_revenue': combined_df['Total Revenue'],
+            'gross_profit': combined_df['Gross Profit'],
+            'net_income': combined_df['Net Income'],
+            'total_debt': combined_df['Total Debt']
+        })
+        financial_data.append(combined_data)
+
+    return pd.DataFrame(financial_data)
+
+
 def extract_senator_trades():
     url = "https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json"
     response = requests.get(url)
@@ -94,3 +127,4 @@ def extract_senator_trades():
     else:
         print(f"Failed to retrieved data: {response.status_code}")
         return pd.DataFrame()
+    
