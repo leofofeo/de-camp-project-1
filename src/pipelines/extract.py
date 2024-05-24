@@ -18,7 +18,6 @@ def extract_data(engine):
     load_company_historical_data(df, engine)
 
     df = extract_senator_trades()
-    print(df.head())
     load_senator_trades(df, engine)
 
 
