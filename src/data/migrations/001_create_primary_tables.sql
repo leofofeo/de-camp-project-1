@@ -13,16 +13,16 @@ CREATE TABLE IF NOT EXISTS company_profiles (
 );
 
 CREATE TABLE IF NOT EXISTS company_historical_data (
-    id SERIAL PRIMARY KEY,
+    id TEXT,
     date DATE NOT NULL,
-    ticker_id TEXT REFERENCES company_profiles(id),
+    ticker TEXT,
     price FLOAT,
     industry TEXT
 );
 
 CREATE TABLE IF NOT EXISTS company_annual_financial_data (
     id SERIAL PRIMARY KEY,
-    ticker_id TEXT REFERENCES company_profiles(id),
+    ticker TEXT REFERENCES company_profiles(ticker),
     year DATE,
     total_revenue FLOAT,
     gross_profit FLOAT,
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS senators (
 CREATE TABLE IF NOT EXISTS senator_transactions (
     id SERIAL PRIMARY KEY,
     senator_id INTEGER REFERENCES senators(id),
-    ticker_id TEXT REFERENCES company_profiles(id),
+    ticker TEXT REFERENCES company_profiles(ticker),
     owner TEXT,
     asset_description TEXT,
     asset_type TEXT,

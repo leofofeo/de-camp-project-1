@@ -1,12 +1,14 @@
 import os
 from sqlalchemy.engine import URL
 from sqlalchemy import create_engine
-from connectors.database import create_tables, tables_exist
+from connectors.database import create_tables, tables_exist, drop_tables
 from pipelines.extract import extract_data
 
 if __name__=='__main__':
     from logger import logger
     logger.info("Starting the application") 
+
+    drop_tables();
 
     if not tables_exist():
         logger.info("Creating tables")
@@ -26,12 +28,11 @@ if __name__=='__main__':
             port=db_port,
             database=db_name,
         )
-        print(connection_url)
         engine = create_engine(connection_url)
-        print(engine)
-
         extract_data(engine)
     else:
         logger.info("Tables already exist")
         
+    # TODO; create annual company data
+
     logger.info("Finished the application")

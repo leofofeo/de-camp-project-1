@@ -6,6 +6,7 @@ from pathlib import Path
 
 load_dotenv()
 
+
 def tables_exist():
     load_dotenv()
     db_name = os.getenv("DB_NAME", "data_ticker")
@@ -39,13 +40,26 @@ def tables_exist():
 
     return db_exists
     
+
 def create_tables():
     print("Creating tables")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'migrations'
     file_path = parallel_dir / '001_create_primary_tables.sql'
-    print(file_path)
+    fd = open(file_path, 'r')
+    sql_file = fd.read()
+    fd.close()
+
+    enact_db_transaction(sql_file)
+
+
+def drop_tables():
+    print("Dropping tables")
+
+    current_dir = Path(__file__).parent
+    parallel_dir = current_dir.parent / 'data' / 'jobs'
+    file_path = parallel_dir / 'drop_tables.sql'
     fd = open(file_path, 'r')
     sql_file = fd.read()
     fd.close()
@@ -60,7 +74,6 @@ def enact_db_transaction(statement):
     db_password = os.getenv("DB_PASSWORD", "")
     db_host = os.getenv("DB_HOST", "localhost")
     db_port = os.getenv("DB_PORT", 5432)
-    print("Executing statement: ", statement)
 
     with psycopg2.connect(
         dbname=db_name,
