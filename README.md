@@ -12,6 +12,8 @@ Available tables are:
 - `senators`
 - `senator_trades`
 
+Available views:
+
 Data set used:
 
 Extraction method:

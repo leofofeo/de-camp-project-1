@@ -14,8 +14,8 @@ def extract_data(engine, db_conn_data=None):
     df = extract_senator_trades()
     load_senator_trades(df, engine)
 
-    tickers = extract_tickers(db_conn_data)
-    tickers = tickers[:5]
+    tickers = extract_tickers(db_conn_data)[1:]
+    
     df = extract_company_profiles(tickers)
     load_company_profiles(df, engine)
 
@@ -40,7 +40,8 @@ def extract_tickers(db_conn_data):
     tickers = cur.fetchall()
     cur.close()
     conn.close()
-    return [ticker[0] for ticker in tickers[1:]]
+    print(tickers)
+    return [ticker[0] for ticker in tickers if ticker[0] not in [None, 'N/A']]
 
 
 def extract_company_profiles(tickers):
@@ -49,26 +50,30 @@ def extract_company_profiles(tickers):
 
     for ticker in tickers:
         print("Extracting data for ", ticker)
-        stock = yf.Ticker(ticker)
-        info = stock.info
-    
-        # Extract the required information
-        stock_info = {
-            "id": info.get("uuid", ""),
-            "ticker": info.get("symbol", None),
-            "name": info.get("shortName", None),
-            "industry": info.get("industry", None),
-            "industry_key": info.get("industryKey", None),
-            "sector": info.get("sector", None),
-            "sector_key": info.get("sectorKey", None),
-            "country": info.get("country", None),
-            "website": info.get("website", None),
-            "market_cap": info.get("marketCap", None),
-            "employees": info.get("fullTimeEmployees", None)
-        }
+        try:
+            stock = yf.Ticker(ticker)
+            info = stock.info
+        
+            # Extract the required information
+            stock_info = {
+                "id": info.get("uuid", ""),
+                "ticker": info.get("symbol", None),
+                "name": info.get("shortName", None),
+                "industry": info.get("industry", None),
+                "industry_key": info.get("industryKey", None),
+                "sector": info.get("sector", None),
+                "sector_key": info.get("sectorKey", None),
+                "country": info.get("country", None),
+                "website": info.get("website", None),
+                "market_cap": info.get("marketCap", None),
+                "employees": info.get("fullTimeEmployees", None)
+            }
 
-        stock_info_df = pd.DataFrame([stock_info])
-        df = pd.concat([df, stock_info_df], ignore_index=True)
+            stock_info_df = pd.DataFrame([stock_info])
+            df = pd.concat([df, stock_info_df], ignore_index=True)
+        except Exception as e:
+            print("Error extracting data for ", ticker)
+            continue
 
     return df
 
@@ -78,11 +83,11 @@ def extract_company_historical_data(tickers):
     historical_data = []
     year = 2023
     for ticker in tickers:
-        stock = yf.Ticker(ticker)
-        info = stock.info
-        start_date = f"{year}-1-1"
-        end_date = f"{year}-12-31"
         try:
+            stock = yf.Ticker(ticker)
+            info = stock.info
+            start_date = f"{year}-1-1"
+            end_date = f"{year}-12-31"
             hist = stock.history(start=start_date, end=end_date)
             for index, row in hist.iterrows():
                 data = {

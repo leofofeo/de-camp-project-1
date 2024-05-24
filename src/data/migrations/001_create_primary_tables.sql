@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS company_profiles (
-    id TEXT PRIMARY KEY,
-    ticker TEXT NOT NUll UNIQUE,
+    id text,
+    ticker TEXT,
     name TEXT,
     industry TEXT,
     industry_key TEXT,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS company_historical_data (
 
 CREATE TABLE IF NOT EXISTS company_annual_financial_data (
     id SERIAL PRIMARY KEY,
-    ticker TEXT REFERENCES company_profiles(ticker),
+    ticker TEXT,
     year DATE,
     total_revenue FLOAT,
     gross_profit FLOAT,
