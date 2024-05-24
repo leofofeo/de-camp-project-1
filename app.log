@@ -23190,3 +23190,110 @@
 2024-05-24 00:04:52,402 - yfinance - DEBUG -  Exiting history()
 2024-05-24 00:04:52,403 - yfinance - DEBUG - Exiting history()
 2024-05-24 00:04:52,454 - logger - INFO - Finished the application
+2024-05-24 00:12:34,394 - logger - INFO - Starting the application
+2024-05-24 00:12:34,474 - logger - INFO - Creating tables
+2024-05-24 00:12:34,520 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:12:34,877 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:14:56,406 - logger - INFO - Starting the application
+2024-05-24 00:14:56,462 - logger - INFO - Creating tables
+2024-05-24 00:14:56,513 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:14:56,857 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:16:17,165 - logger - INFO - Starting the application
+2024-05-24 00:17:10,601 - logger - INFO - Starting the application
+2024-05-24 00:17:43,188 - logger - INFO - Starting the application
+2024-05-24 00:17:53,169 - logger - INFO - Starting the application
+2024-05-24 00:17:53,248 - logger - INFO - Creating tables
+2024-05-24 00:17:53,306 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:17:53,540 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:18:12,611 - logger - INFO - Starting the application
+2024-05-24 00:18:12,668 - logger - INFO - Creating tables
+2024-05-24 00:18:12,710 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:18:12,893 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:19:16,792 - logger - INFO - Starting the application
+2024-05-24 00:19:16,853 - logger - INFO - Creating tables
+2024-05-24 00:19:16,898 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:19:17,166 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:20:25,794 - logger - INFO - Starting the application
+2024-05-24 00:20:25,913 - logger - INFO - Creating tables
+2024-05-24 00:20:25,962 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:20:26,163 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:21:08,329 - logger - INFO - Starting the application
+2024-05-24 00:21:08,386 - logger - INFO - Creating tables
+2024-05-24 00:21:08,427 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:21:08,676 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:21:26,084 - logger - INFO - Starting the application
+2024-05-24 00:21:26,143 - logger - INFO - Creating tables
+2024-05-24 00:21:26,187 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:21:26,466 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:21:33,577 - logger - INFO - Starting the application
+2024-05-24 00:21:33,651 - logger - INFO - Creating tables
+2024-05-24 00:21:33,699 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:21:33,897 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:21:40,831 - logger - INFO - Starting the application
+2024-05-24 00:21:40,901 - logger - INFO - Creating tables
+2024-05-24 00:21:40,961 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:21:41,128 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:22:11,622 - logger - INFO - Starting the application
+2024-05-24 00:22:11,689 - logger - INFO - Creating tables
+2024-05-24 00:22:11,746 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:22:11,932 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:22:46,926 - logger - INFO - Starting the application
+2024-05-24 00:22:46,990 - logger - INFO - Creating tables
+2024-05-24 00:22:47,032 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:22:47,205 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:23:59,617 - logger - INFO - Starting the application
+2024-05-24 00:23:59,678 - logger - INFO - Creating tables
+2024-05-24 00:23:59,721 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:23:59,931 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:25:09,663 - logger - INFO - Starting the application
+2024-05-24 00:25:09,722 - logger - INFO - Creating tables
+2024-05-24 00:25:09,765 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:25:09,966 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:26:41,371 - logger - INFO - Starting the application
+2024-05-24 00:26:41,437 - logger - INFO - Creating tables
+2024-05-24 00:26:41,480 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:26:41,670 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:27:30,623 - logger - INFO - Starting the application
+2024-05-24 00:27:30,679 - logger - INFO - Creating tables
+2024-05-24 00:27:30,720 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:27:30,993 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:27:51,889 - logger - INFO - Starting the application
+2024-05-24 00:27:51,959 - logger - INFO - Creating tables
+2024-05-24 00:27:52,003 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:27:52,185 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:28:43,261 - logger - INFO - Starting the application
+2024-05-24 00:28:43,320 - logger - INFO - Creating tables
+2024-05-24 00:28:43,369 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:28:43,586 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:29:13,584 - logger - INFO - Starting the application
+2024-05-24 00:29:13,653 - logger - INFO - Creating tables
+2024-05-24 00:29:18,857 - logger - INFO - Starting the application
+2024-05-24 00:29:18,915 - logger - INFO - Creating tables
+2024-05-24 00:29:18,965 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:29:19,142 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:30:40,408 - logger - INFO - Starting the application
+2024-05-24 00:30:40,455 - logger - INFO - Creating tables
+2024-05-24 00:30:40,498 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:30:40,686 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:30:49,405 - logger - INFO - Starting the application
+2024-05-24 00:30:49,459 - logger - INFO - Creating tables
+2024-05-24 00:30:49,503 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:30:49,665 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:30:50,210 - logger - INFO - Finished the application
+2024-05-24 00:33:12,758 - logger - INFO - Starting the application
+2024-05-24 00:33:12,853 - logger - INFO - Creating tables
+2024-05-24 00:33:12,902 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:33:13,119 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:33:13,797 - logger - INFO - Finished the application
+2024-05-24 00:40:06,166 - logger - INFO - Starting the application
+2024-05-24 00:40:30,338 - logger - INFO - Starting the application
+2024-05-24 00:40:30,395 - logger - INFO - Creating tables
+2024-05-24 00:40:54,440 - logger - INFO - Starting the application
+2024-05-24 00:40:54,548 - logger - INFO - Creating tables
+2024-05-24 00:40:54,601 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:40:54,859 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:41:53,294 - logger - INFO - Starting the application
+2024-05-24 00:41:53,344 - logger - INFO - Creating tables
+2024-05-24 00:41:53,389 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443
+2024-05-24 00:41:53,576 - urllib3.connectionpool - DEBUG - https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com:443 "GET /aggregate/all_transactions.json HTTP/1.1" 200 4007420
+2024-05-24 00:41:54,161 - logger - INFO - Finished the application

@@ -1,20 +1,25 @@
+import requests
 import yfinance as yf
 import pandas as pd
-from .load import load_company_profiles, load_company_historical_data
+from .load import (
+    load_company_profiles, 
+    load_company_historical_data,
+    load_senator_trades
+)
 from data.tickers import TICKERS
 
 def extract_data(engine):
     print("Extracting data")
 
-    # df = extract_company_profiles()
-    # load_company_profiles(df, engine)
+    df = extract_company_profiles()
+    load_company_profiles(df, engine)
 
     df = extract_company_historical_data()
     load_company_historical_data(df, engine)
 
-    # TODO; create senator table
-    
-    # TODO: implement extract senator trades
+    df = extract_senator_trades()
+    print(df.head())
+    load_senator_trades(df, engine)
 
 
 def extract_company_profiles():
@@ -51,10 +56,10 @@ def extract_company_historical_data():
     print("Extracting data for company_historical_data")
     historical_data = []
     year = 2023
-    for ticker in TICKERS[0:25]:
+    for ticker in TICKERS:
         stock = yf.Ticker(ticker)
         info = stock.info
-        start_date = f"{year}-12-1"
+        start_date = f"{year}-1-1"
         end_date = f"{year}-12-31"
         try:
             hist = stock.history(start=start_date, end=end_date)
@@ -71,3 +76,22 @@ def extract_company_historical_data():
             print(f"Error extracting data for {ticker}: {e}")
             continue
     return pd.DataFrame(historical_data)
+
+def extract_senator_trades():
+    url = "https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json"
+    response = requests.get(url)
+    if response.status_code == 200:
+        json_data = response.json()
+
+        df = pd.json_normalize(json_data)
+        allowed_columns = ['senator', 'ticker', 'owner', 'asset_description', 'asset_type', 'amount']
+        
+        # clean up dataframe and match it to the database schema
+        df = df[allowed_columns]
+        df.rename(columns={'senator': 'senator_name'}, inplace=True)
+        print("df has been renamed")
+        # df.astype({'amount': 'str'}, copy=False)
+        return df
+    else:
+        print(f"Failed to retrieved data: {response.status_code}")
+        return pd.DataFrame()

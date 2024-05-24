@@ -38,12 +38,12 @@ CREATE TABLE IF NOT EXISTS senators (
     net_worth FLOAT
 );
 
-CREATE TABLE IF NOT EXISTS senator_transactions (
+CREATE TABLE IF NOT EXISTS senator_trades (
     id SERIAL PRIMARY KEY,
-    senator_id INTEGER REFERENCES senators(id),
-    ticker TEXT REFERENCES company_profiles(ticker),
+    senator_name TEXT,
+    ticker TEXT,
     owner TEXT,
     asset_description TEXT,
     asset_type TEXT,
-    amount FLOAT
+    amount TEXT
 );

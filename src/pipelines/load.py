@@ -10,3 +10,9 @@ def load_company_historical_data(df, engine):
     print("\nLoading data for company_historical_data")
     print(df.head(5))
     df.to_sql("company_historical_data", con=engine, if_exists="append", index=False)
+
+
+def load_senator_trades(df, engine):
+    print("\nLoading data for senator_trades")
+    print(df.head(5))
+    df.to_sql("senator_trades", con=engine, if_exists="append", index=False)
