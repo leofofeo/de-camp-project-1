@@ -72,21 +72,6 @@ def enact_db_transaction(statement, db_conn_data):
             cursor.execute(statement)
             connection.commit()
             print("Transaction committed")
-            
-
-def create_annual_company_data_table(db_conn_data):
-    print("Creating annual_company_data table")
-
-    current_dir = Path(__file__).parent
-    parallel_dir = current_dir.parent / 'data' / 'jobs'
-
-    # TODO: implement this transformation
-    file_path = parallel_dir / 'seed_annual_company_data_table.sql'
-    fd = open(file_path, 'r')
-    sql_file = fd.read()
-    fd.close()
-
-    enact_db_transaction(sql_file, db_conn_data)
 
 
 def get_db_conn_data():

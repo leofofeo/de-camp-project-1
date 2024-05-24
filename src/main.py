@@ -4,10 +4,10 @@ from connectors.database import (
     create_tables, 
     tables_exist, 
     drop_tables,
-    create_annual_company_data_table,
     get_db_conn_data
 )
 from pipelines.extract import extract_data
+from pipelines.transform import create_annual_company_data_table
 
 if __name__=='__main__':
     from logger import logger
@@ -34,6 +34,6 @@ if __name__=='__main__':
     else:
         logger.info("Tables already exist")
     
-    create_annual_company_data_table(db_conn_data)
+    # create_annual_company_data_table(db_conn_data)
 
     logger.info("Finished the application")
