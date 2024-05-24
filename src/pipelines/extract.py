@@ -64,11 +64,11 @@ def extract_company_historical_data():
             hist = stock.history(start=start_date, end=end_date)
             for index, row in hist.iterrows():
                 data = {
-                    "id": info.get("uuid", ""),
+                    "id": info.get("uuid", None),
                     "date": index.date(),
                     "ticker": ticker,
                     "price": row['Close'],
-                    "industry": info.get("industry", "")
+                    "industry": info.get("industry", None)
                 }
                 historical_data.append(data)
         except Exception as e:
