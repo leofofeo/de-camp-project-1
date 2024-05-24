@@ -1,0 +1,16 @@
+name: tickers_etl
+start_date: '2020-01-01'
+end_date: '2023-12-31'
+ticker_list:
+  - 'AAPL'
+  - 'MSFT' 
+  - 'GOOGL'
+  - 'TSLA'
+  - 'GM' 
+  - 'F'
+  - 'NVDA'
+  - 'DAL' 
+  - 'AAL'
+  - 'LUV'
+senate_trans_reference_path: 'data/senate_official_trans.csv'
+  
