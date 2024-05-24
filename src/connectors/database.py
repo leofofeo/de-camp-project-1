@@ -74,6 +74,18 @@ def enact_db_transaction(statement, db_conn_data):
             print("Transaction committed")
 
 
+def create_views(db_conn_data):
+    print("Dropping tables")
+
+    current_dir = Path(__file__).parent
+    parallel_dir = current_dir.parent / 'data' / 'jobs'
+    file_path = parallel_dir / 'create_views.sql'
+    fd = open(file_path, 'r')
+    sql_file = fd.read()
+    fd.close()
+
+    enact_db_transaction(sql_file, db_conn_data)
+
 def get_db_conn_data():
     return {
         "db_name": os.getenv("DB_NAME", "data_ticker"),
@@ -82,3 +94,5 @@ def get_db_conn_data():
         "db_host": os.getenv("DB_HOST", "localhost"),
         "db_port": os.getenv("DB_PORT", 5432),
     }
+
+
