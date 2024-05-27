@@ -1,6 +1,6 @@
-'''
+/*
 company_metrics_view provides an overview of company metrics, including profile information and historical price data, grouped by year and ticker.
-'''
+*/
 
 CREATE OR REPLACE VIEW company_metrics_view AS
 SELECT 
@@ -31,9 +31,9 @@ ORDER BY
 
 
 
-'''
+/*
 senator_trades_view details senator transactions and ticker price movement up or down within a 5 day window
-'''
+*/
 
 CREATE OR REPLACE VIEW senator_trades_view AS
 
@@ -69,9 +69,9 @@ ORDER BY
     t.ticker, t.transaction_date, h.date;
 
 
-'''
+/*
 view top_industries_view provides view of industry and sector sorted in descending by the market cap aggregate
-'''
+*/
 
 CREATE OR REPLACE VIEW top_industries_view AS
 SELECT 
