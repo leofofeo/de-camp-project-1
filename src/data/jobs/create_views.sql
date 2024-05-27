@@ -1,5 +1,5 @@
 '''
---company_metrics_view provides an overview of company metrics, including profile information and historical price data, grouped by year and ticker.
+company_metrics_view provides an overview of company metrics, including profile information and historical price data, grouped by year and ticker.
 '''
 
 CREATE OR REPLACE VIEW company_metrics_view AS
@@ -32,7 +32,7 @@ ORDER BY
 
 
 '''
--- senator_trades_view details senator transactions and ticker price movement up or down within a 5 day window
+senator_trades_view details senator transactions and ticker price movement up or down within a 5 day window
 '''
 
 CREATE OR REPLACE VIEW senator_trades_view AS
