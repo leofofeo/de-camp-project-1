@@ -139,7 +139,7 @@ def extract_senator_trades():
         json_data = response.json()
 
         df = pd.json_normalize(json_data)
-        allowed_columns = ['senator', 'ticker', 'owner', 'asset_description', 'asset_type', 'amount']
+        allowed_columns = ['senator', 'ticker', 'owner', 'asset_description', 'asset_type', 'amount', 'transaction_date', 'disclosure_date']
         
         df = df[allowed_columns]
         df.rename(columns={'senator': 'senator_name'}, inplace=True)
