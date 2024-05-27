@@ -45,5 +45,7 @@ CREATE TABLE IF NOT EXISTS senator_trades (
     owner TEXT,
     asset_description TEXT,
     asset_type TEXT,
-    amount TEXT
+    amount TEXT,
+    transaction_date DATE,
+    disclosure_date DATE
 );
