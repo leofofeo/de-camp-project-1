@@ -16,4 +16,4 @@ GROUP BY
     cp.industry_key, 
     cp.sector, 
     cp.sector_key 
-order by 5 desc ;   
+order by 5 desc; 

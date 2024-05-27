@@ -89,13 +89,23 @@ def extract_company_historical_data(tickers):
             start_date = f"{year}-1-1"
             end_date = f"{year}-12-31"
             hist = stock.history(start=start_date, end=end_date)
+
+            # Calculate the price moving average 
+            hist['dma_10'] = hist['Close'].rolling(window=10, min_periods=1).mean()
+            hist['dma_30'] = hist['Close'].rolling(window=30, min_periods=1).mean()
+            hist['dma_60'] = hist['Close'].rolling(window=60, min_periods=1).mean()
+            
+
             for index, row in hist.iterrows():
                 data = {
                     "id": info.get("uuid", None),
                     "date": index.date(),
                     "ticker": ticker,
                     "price": row['Close'],
-                    "industry": info.get("industry", None)
+                    "industry": info.get("industry", None),
+                    "dma_10":row['dma_10'],
+                    "dma_30":row['dma_30'],
+                    "dma_60":row['dma_60']
                 }
                 historical_data.append(data)
         except Exception as e:
@@ -139,7 +149,7 @@ def extract_senator_trades():
         json_data = response.json()
 
         df = pd.json_normalize(json_data)
-        allowed_columns = ['senator', 'ticker', 'owner', 'asset_description', 'asset_type', 'amount', 'transaction_date', 'disclosure_date']
+        allowed_columns = ['senator', 'ticker', 'owner', 'asset_description', 'asset_type', 'amount', 'transaction_date', 'disclosure_date', 'type']
         
         df = df[allowed_columns]
         df.rename(columns={'senator': 'senator_name'}, inplace=True)

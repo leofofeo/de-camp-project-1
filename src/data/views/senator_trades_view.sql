@@ -6,8 +6,12 @@ SELECT
     t.transaction_date,
     t.ticker,
     t.amount,
+    t.type AS tran_type,
     h.date AS close_date,
     h.price,
+    h.10_dma,
+    h.30_dma,
+    h.60_dma,
     LAG(h.price, 1) OVER (PARTITION BY t.ticker ORDER BY h.date) AS prev_close,
     LEAD(h.price, 1) OVER (PARTITION BY t.ticker ORDER BY h.date) AS next_close,
     CASE 
