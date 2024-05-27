@@ -38,6 +38,7 @@ def create_tables(db_conn_data):
     print("Creating tables")
 
     current_dir = Path(__file__).parent
+    print(current_dir)
     parallel_dir = current_dir.parent / 'data' / 'migrations'
     file_path = parallel_dir / '001_create_primary_tables.sql'
     fd = open(file_path, 'r')

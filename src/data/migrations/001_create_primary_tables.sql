@@ -35,8 +35,7 @@ CREATE TABLE IF NOT EXISTS senators (
     first_name TEXT,
     last_name TEXT,
     twitter_handle TEXT,
-    net_worth FLOAT,
-
+    net_worth FLOAT
 );
 
 CREATE TABLE IF NOT EXISTS senator_trades (
@@ -48,5 +47,5 @@ CREATE TABLE IF NOT EXISTS senator_trades (
     asset_type TEXT,
     amount TEXT,
     transaction_date DATE,
-    disclore_date DATE
+    disclosure_date DATE
 );
