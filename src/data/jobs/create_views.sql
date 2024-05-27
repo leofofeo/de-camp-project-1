@@ -36,11 +36,11 @@ senator_trades_view details senator transactions and ticker price movement up or
 */
 
 CREATE OR REPLACE VIEW senator_trades_view AS
-
 SELECT 
     t.senator_name,
     t.owner,
     t.transaction_date,
+    t.type AS tran_type,
     t.ticker,
     t.amount,
     h.date AS close_date,
@@ -70,6 +70,7 @@ AND
     h.date BETWEEN t.transaction_date - INTERVAL '5 day' AND t.transaction_date + INTERVAL '5 day'
 ORDER BY 
     t.ticker, t.transaction_date, h.date;
+
 
 
 /*

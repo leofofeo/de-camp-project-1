@@ -1,4 +1,13 @@
 
+/**
+Drop all views and tables
+**/
+
+drop view if exists public.top_senator_gains_from_purchases;
+drop view if exists public.top_senator_gains_from_sales;
+drop view if exists top_senator_losses_from_purchases;
+drop view if exists top_senator_losses_from_sales;
+
 drop view if exists company_metrics_view;
 drop view if exists senator_trades_view;
 drop view if exists top_industries_view;
