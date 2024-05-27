@@ -1,9 +1,11 @@
-## Instructions for running pipeline
-1. Create a database called `ticker_data`
+## Instructions for running pipeline locally
+1. Create a database called `ticker_data` and ensure that postgres is running your machine
 2. Run `git checkout main` and do a `git pull`
 3. Create a `.env`  file in your project root - you can copy the `template.env` file and adjust the values as needed based on your local environment
-4. From within the project root, activate your conda environment and run `pip install -r requirements.txt`
-5. Run `make run`
+
+From here, you can either:
+ - activate your conda environment and run `pip install -r requirements.txt` from the project root, then run `make run`
+ - make sure docker is running, and run `docker compose up` from the project root
 
 Available tables are:
 - `company_profiles`
