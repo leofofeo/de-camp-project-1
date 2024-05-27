@@ -7,3 +7,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5004:5000
+    environment:
+      - DB_NAME=ticker_data
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_PORT=5432
+      - DB_HOST=host.docker.internal
