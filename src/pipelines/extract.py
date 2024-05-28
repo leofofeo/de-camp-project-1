@@ -28,8 +28,13 @@ def extract_data(engine, db_conn_data=None):
 def extract_tickers(db_conn_data):
     print("Extracting tickers")
     query = "SELECT DISTINCT ticker FROM senator_trades"
-    #where ticker in ('AAPL','MSFT','BAC','DIS','NFLX'
-    #'PFE','DISCA','T','FEYE','FDC','URBN','CZR','NVDA','AMZN','PYPL','FB','WFC','GE','CLF','INTC')"
+    
+    '''
+    These are the top 20 tickers ('AAPL','MSFT','BAC','DIS','NFLX', 'PFE','DISCA','T','FEYE','FDC','URBN','CZR','NVDA','AMZN','PYPL','FB','WFC','GE','CLF','INTC')
+    replace the tickers query above with the below sample query to limit the runtime and start testing the incremental datasets...
+
+    query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX') "
+    '''
     conn = psycopg2.connect(
         dbname=db_conn_data["db_name"],
         user=db_conn_data["db_user"],
