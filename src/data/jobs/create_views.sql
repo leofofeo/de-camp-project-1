@@ -36,15 +36,18 @@ senator_trades_view details senator transactions and ticker price movement up or
 */
 
 CREATE OR REPLACE VIEW senator_trades_view AS
-
 SELECT 
     t.senator_name,
     t.owner,
     t.transaction_date,
+    t.type AS tran_type,
     t.ticker,
     t.amount,
     h.date AS close_date,
     h.price,
+    h.dma_10,
+    h.dma_30,
+    h.dma_60,
     LAG(h.price, 1) OVER (PARTITION BY t.ticker ORDER BY h.date) AS prev_close,
     LEAD(h.price, 1) OVER (PARTITION BY t.ticker ORDER BY h.date) AS next_close,
     CASE 
@@ -67,6 +70,7 @@ AND
     h.date BETWEEN t.transaction_date - INTERVAL '5 day' AND t.transaction_date + INTERVAL '5 day'
 ORDER BY 
     t.ticker, t.transaction_date, h.date;
+
 
 
 /*
@@ -94,3 +98,64 @@ GROUP BY
     cp.sector_key 
 order by 5 desc;     
 
+
+
+/*
+view top_senator_gains_from_purchases provides view of senators who benefited the most from purchases (greater than 4)
+*/
+
+CREATE OR REPLACE VIEW top_senator_gains_from_purchases AS
+SELECT 
+   *
+FROM 
+    senator_trades_view cv
+WHERE 
+    cv.tran_type = 'Purchase' and percentage_increase is not null
+  AND percentage_increase >4
+ORDER BY 1;
+
+
+/*
+view top_senator_gains_from_sales provides view of senators who benefited the most from sales (greater than 7%)
+*/
+
+CREATE OR REPLACE VIEW top_senator_gains_from_sales AS
+SELECT 
+   *
+FROM 
+    senator_trades_view cv
+WHERE 
+    cv.tran_type like '%Sale%' and percentage_increase is not null
+  AND percentage_increase > 7
+ORDER BY 1;
+
+
+
+/*
+view top_senator_losses_from_purchases provides view of senators who incurred greater than 5% losses from purchases
+*/
+
+CREATE OR REPLACE VIEW top_senator_losses_from_purchases AS
+SELECT 
+   *
+FROM 
+    senator_trades_view cv
+WHERE 
+    cv.tran_type = 'Purchase' and percentage_decrease is not null
+  AND percentage_decrease < -5
+ORDER BY     percentage_increase  DESC, senator_name asc, transaction_date asc;
+
+
+/*
+view top_senator_losses_from_sales provides view of senators who incurred greater than 10% losses from sales
+*/
+
+CREATE OR REPLACE VIEW top_senator_losses_from_sales AS
+SELECT 
+   *
+FROM 
+    senator_trades_view cv
+WHERE 
+    cv.tran_type like '%Sale%' and percentage_decrease is not null
+  AND percentage_decrease < -10
+ORDER BY 1;

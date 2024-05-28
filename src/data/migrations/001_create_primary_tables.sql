@@ -17,7 +17,10 @@ CREATE TABLE IF NOT EXISTS company_historical_data (
     date DATE,
     ticker TEXT,
     price FLOAT,
-    industry TEXT
+    industry TEXT,
+    dma_10 FLOAT,
+    dma_30 FLOAT,
+    dma_60 FLOAT
 );
 
 CREATE TABLE IF NOT EXISTS company_annual_financial_data (
@@ -47,5 +50,6 @@ CREATE TABLE IF NOT EXISTS senator_trades (
     asset_type TEXT,
     amount TEXT,
     transaction_date DATE,
-    disclosure_date DATE
+    disclosure_date DATE,
+    type TEXT
 );
