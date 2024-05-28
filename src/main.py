@@ -38,4 +38,4 @@ if __name__=='__main__':
     run_transformations(db_conn_data)
     create_views(db_conn_data)
 
-    #logger.info("Finished the application")
+    logger.info("Finished populating the database")

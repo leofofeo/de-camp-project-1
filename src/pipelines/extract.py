@@ -1,4 +1,4 @@
-import requests, psycopg2
+import requests, psycopg2, os
 import yfinance as yf
 import pandas as pd
 from .load import (
@@ -7,6 +7,7 @@ from .load import (
     load_senator_trades,
     load_company_financials,
 )
+from dotenv import load_dotenv
 
 def extract_data(engine, db_conn_data=None):
     print("Extracting data")
@@ -27,14 +28,17 @@ def extract_data(engine, db_conn_data=None):
 
 def extract_tickers(db_conn_data):
     print("Extracting tickers")
-    query = "SELECT DISTINCT ticker FROM senator_trades"
     
-    '''
+    """
     These are the top 20 tickers ('AAPL','MSFT','BAC','DIS','NFLX', 'PFE','DISCA','T','FEYE','FDC','URBN','CZR','NVDA','AMZN','PYPL','FB','WFC','GE','CLF','INTC')
     replace the tickers query above with the below sample query to limit the runtime and start testing the incremental datasets...
-
-    query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX') "
-    '''
+    """
+    load_dotenv()
+    if os.getenv("RUN_ENV") == "TESTING":
+        query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX') "
+    else:
+        query = "SELECT DISTINCT ticker FROM senator_trades"
+    
     conn = psycopg2.connect(
         dbname=db_conn_data["db_name"],
         user=db_conn_data["db_user"],
