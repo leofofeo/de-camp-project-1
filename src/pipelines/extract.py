@@ -35,7 +35,14 @@ def extract_tickers(db_conn_data):
     """
     load_dotenv()
     if os.getenv("RUN_ENV") == "TESTING":
-        query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX') "
+        query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX')"
+    
+    elif os.getenv("RUN_ENV") == "INCREMENTAL TESTING 1":
+        query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL', 'MSFT')" 
+
+    elif os.getenv("RUN_ENV") == "INCREMENTAL TESTING 2":
+        query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('BAC','NVDA','AMZN','PYPL')" 
+
     else:
         query = "SELECT DISTINCT ticker FROM senator_trades"
     
