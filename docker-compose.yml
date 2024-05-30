@@ -8,10 +8,10 @@ services:
     ports:
       - 5004:5000
     environment:
-      - DB_NAME=dec-senator-trades-db
+      - DB_NAME=ticker_data
       - DB_USER=postgres
-      - DB_PASSWORD=5hFGkqNitHKo
+      - DB_PASSWORD=postgres
       - DB_PORT=5432
-      - DB_HOST=dec-senator-trades-db.cjkcm6ky82v0.us-east-2.rds.amazonaws.com
+      - DB_HOST=host.docker.internal
       - RUN_ENV=TESTING
 

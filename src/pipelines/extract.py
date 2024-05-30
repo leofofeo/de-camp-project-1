@@ -40,9 +40,9 @@ def extract_tickers(db_conn_data):
 
     if run_environment == "TESTING":
         query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX')"
-    elif run_environment == "INCREMENTAL TESTING 1":
+    elif run_environment == "INCREMENTAL_TESTING_1":
         query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL', 'MSFT')" 
-    elif run_environment == "INCREMENTAL TESTING 2":
+    elif run_environment == "INCREMENTAL_TESTING_2":
         query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('BAC','NVDA','AMZN','PYPL')" 
     
     conn = psycopg2.connect(
