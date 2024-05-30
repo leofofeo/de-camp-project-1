@@ -34,17 +34,16 @@ def extract_tickers(db_conn_data):
     replace the tickers query above with the below sample query to limit the runtime and start testing the incremental datasets...
     """
     load_dotenv()
-    if os.getenv("RUN_ENV") == "TESTING":
+
+    run_environment = os.getenv("RUN_ENV")
+    query = "SELECT DISTINCT ticker FROM senator_trades"
+
+    if run_environment == "TESTING":
         query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL','MSFT','BAC','DIS','NFLX')"
-    
-    elif os.getenv("RUN_ENV") == "INCREMENTAL TESTING 1":
+    elif run_environment == "INCREMENTAL TESTING 1":
         query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('AAPL', 'MSFT')" 
-
-    elif os.getenv("RUN_ENV") == "INCREMENTAL TESTING 2":
+    elif run_environment == "INCREMENTAL TESTING 2":
         query = "SELECT DISTINCT ticker FROM senator_trades where ticker in ('BAC','NVDA','AMZN','PYPL')" 
-
-    else:
-        query = "SELECT DISTINCT ticker FROM senator_trades"
     
     conn = psycopg2.connect(
         dbname=db_conn_data["db_name"],
