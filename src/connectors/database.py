@@ -87,6 +87,7 @@ def create_views(db_conn_data):
     enact_db_transaction(sql_file, db_conn_data)
 
 def get_db_conn_data():
+    print("from get_db_conn_data")
     return {
         "db_name": os.getenv("DB_NAME", "data_ticker"),
         "db_user": os.getenv("DB_USER", "postgres"),
