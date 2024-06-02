@@ -8,9 +8,11 @@ from .load import (
     load_company_financials,
 )
 from dotenv import load_dotenv
+from connectors.database import DBConnData
+from logger import logger
 
-def extract_data(engine, db_conn_data=None):
-    print("Extracting data")
+def extract_data(engine, db_conn_data: DBConnData = None):
+    logger.info("Extracting data")
 
     df = extract_senator_trades()
     load_senator_trades(df, engine)
@@ -26,12 +28,13 @@ def extract_data(engine, db_conn_data=None):
     df = extract_company_financials(tickers)
     load_company_financials(df, engine)
 
-def extract_tickers(db_conn_data):
-    print("Extracting tickers")
+def extract_tickers(db_conn_data: DBConnData):
+    logger.info("Extracting tickers")
     
     """
-    These are the top 20 tickers ('AAPL','MSFT','BAC','DIS','NFLX', 'PFE','DISCA','T','FEYE','FDC','URBN','CZR','NVDA','AMZN','PYPL','FB','WFC','GE','CLF','INTC')
-    replace the tickers query above with the below sample query to limit the runtime and start testing the incremental datasets...
+    These are the top 20 tickers: 
+    ('AAPL','MSFT','BAC','DIS','NFLX', 'PFE','DISCA','T','FEYE','FDC','URBN','CZR','NVDA','AMZN','PYPL','FB','WFC','GE','CLF','INTC')
+    Replace the tickers query above with the below sample query to limit the runtime and start testing the incremental datasets...
     """
     load_dotenv()
 
@@ -61,16 +64,17 @@ def extract_tickers(db_conn_data):
     return [ticker[0] for ticker in tickers if ticker[0] not in [None, 'N/A']]
 
 
-def extract_company_profiles(tickers):
-    print("Extracting data for company_profiles")
+def extract_company_profiles(tickers: list[str]):
+    logger.info("Extracting data for company_profiles")
     
     # Use yf.Tickers to fetch data for multiple tickers at once
     stocks = yf.Tickers(tickers)
     profiles_data = []
 
     for ticker in tickers:
-        print("Extracting data for", ticker)
+        logger.info(f"Extracting data for {ticker[0]}")
         try:
+            
             stock = stocks.tickers[ticker]
             info = stock.info
 
@@ -97,7 +101,7 @@ def extract_company_profiles(tickers):
     return pd.DataFrame(profiles_data)
 
 def extract_company_historical_data(tickers):
-    print("Extracting data for company_historical_data")
+    logger.info("Extracting data for company_historical_data")
 
     historical_data = []
     year = 2023
@@ -137,7 +141,7 @@ def extract_company_historical_data(tickers):
 
 
 def extract_company_financials(tickers):
-    print("Extracting data for company_financials")
+    logger.info("Extracting data for company_financials")
     financial_data = []
     
     year = 2023
@@ -183,6 +187,7 @@ def extract_company_financials(tickers):
     return pd.concat(financial_data, ignore_index=True)
 
 def extract_senator_trades():
+    logger.info("Retrieving data for senator trades")
     url = "https://senate-stock-watcher-data.s3-us-west-2.amazonaws.com/aggregate/all_transactions.json"
     response = requests.get(url)
     if response.status_code == 200:
