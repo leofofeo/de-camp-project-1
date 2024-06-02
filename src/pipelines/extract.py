@@ -60,7 +60,6 @@ def extract_tickers(db_conn_data: DBConnData):
     tickers = cur.fetchall()
     cur.close()
     conn.close()
-    print(tickers)
     return [ticker[0] for ticker in tickers if ticker[0] not in [None, 'N/A']]
 
 
@@ -74,7 +73,6 @@ def extract_company_profiles(tickers: list[str]):
     for ticker in tickers:
         logger.info(f"Extracting data for {ticker[0]}")
         try:
-            
             stock = stocks.tickers[ticker]
             info = stock.info
 
@@ -95,7 +93,7 @@ def extract_company_profiles(tickers: list[str]):
 
             profiles_data.append(stock_info)
         except Exception as e:
-            print("Error extracting data for", ticker, ":", e)
+            logger.error("Error extracting data for", ticker, ":", e)
             continue
 
     return pd.DataFrame(profiles_data)
@@ -135,7 +133,7 @@ def extract_company_historical_data(tickers):
                 }
                 historical_data.append(data)
         except Exception as e:
-            print(f"Error extracting data for {ticker}: {e}")
+            logger.error(f"Error extracting data for {ticker}: {e}")
             continue
     return pd.DataFrame(historical_data)
 
@@ -152,7 +150,7 @@ def extract_company_financials(tickers):
     stocks = yf.Tickers(tickers)
 
     for ticker in tickers:
-        print("Extracting data for", ticker)
+        logger.info(f"Extracting data for {ticker}")
         
         try:
             company = stocks.tickers[ticker]
@@ -181,7 +179,7 @@ def extract_company_financials(tickers):
             financial_data.append(combined_data)
         
         except Exception as e:
-            print(f"Error extracting data for {ticker}: {e}")
+            logger.error(f"Error extracting data for {ticker}: {e}")
             continue
 
     return pd.concat(financial_data, ignore_index=True)
@@ -204,6 +202,6 @@ def extract_senator_trades():
         
         return df
     else:
-        print(f"Failed to retrieved data: {response.status_code}")
+        logger.error(f"Failed to retrieved data: {response.status_code}")
         return pd.DataFrame()
     

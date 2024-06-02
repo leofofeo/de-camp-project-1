@@ -83,7 +83,7 @@ def enact_db_transaction(statement: str, db_conn_data: DBConnData):
         with connection.cursor() as cursor:
             cursor.execute(statement)
             connection.commit()
-            print("Transaction committed")
+            logger.info("Transaction committed")
 
 
 def create_views(db_conn_data: DBConnData):
