@@ -6,6 +6,7 @@
 ## From here, you can either:
  - activate your conda environment and run `pip install -r requirements.txt` from the project root, then run `make run`
  - make sure docker is running, and run `docker compose up` from the project root
+    - if using docker, ensure your environment variables are set correctly in the `docker-compose.yml` file
 
 ## Senator Trades ERD 
 ![alt text](src/images/erd.png)
@@ -116,9 +117,17 @@ Transformations are performed on the extracted financial data before it is loade
 
 ## Test coverage:
 
+Currently there is only one unit test, which tests the extraction of senator trades data from an api to a pandas dataframe. It uses `mocker` to mock out the api response and pytest fixtures to create the constants needed for the test.
+
+Running `pytest` from the project root will run all available tests.
+
 ## Logging method:
 
+This project uses Python's `logging` library. To add additional logs, import the instantiated `logger` from `logger.py`.
+
 ## Containerization:
+
+This project uses a `Dockerfile` for the baseline image. This image can be uploaded to a container registry (as it is for our project with ECR) or built and run locally to execute the program. There is a complementary `docker-compose.yml` file
 
 ## Senator Trades Data Flow Diagram (Draft)
 ![alt text](/src/images/dfd.png)
