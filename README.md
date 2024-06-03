@@ -132,8 +132,9 @@ This project uses a `Dockerfile` for the baseline image. This image can be uploa
 ## Senator Trades Data Flow Diagram (Draft)
 ![alt text](/src/images/dfd.png)
 
-https://app.diagrams.net/#G1wDjpTDYxj51aHuueRH9gTCO02O7cBWtF#%7B%22pageId%22%3A%22iDdZBAZlwHdS2ixmJFMn%22%7D
+[Diagram](https://app.diagrams.net/#G1wDjpTDYxj51aHuueRH9gTCO02O7cBWtF#%7B%22pageId%22%3A%22iDdZBAZlwHdS2ixmJFMn%22%7D)
 
+[Google Drive Version](https://drive.google.com/file/d/1wDjpTDYxj51aHuueRH9gTCO02O7cBWtF/view#{%22pageId%22:%22iDdZBAZlwHdS2ixmJFMn%22})
 
 
 
