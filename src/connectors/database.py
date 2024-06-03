@@ -1,13 +1,25 @@
 import os
+from typing import TypedDict
 from dotenv import load_dotenv
 
 import psycopg2
 from pathlib import Path
 
+from logger import logger
+
 load_dotenv()
 
 
-def tables_exist(db_conn_data):
+class DBConnData(TypedDict):
+    db_name: str
+    db_user: str
+    db_password: str
+    db_host: str
+    db_port: int
+
+
+def tables_exist(db_conn_data: DBConnData) -> bool:
+    logger.info("Checking if tables exist")
     with psycopg2.connect(
         dbname=db_conn_data["db_name"],
         user=db_conn_data["db_user"],
@@ -34,8 +46,8 @@ def tables_exist(db_conn_data):
     return db_exists
     
 
-def create_tables(db_conn_data):
-    print("Creating tables")
+def create_tables(db_conn_data: DBConnData):
+    logger.info("Creating initial tables")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'migrations'
@@ -47,8 +59,8 @@ def create_tables(db_conn_data):
     enact_db_transaction(sql_file, db_conn_data)
 
 
-def drop_tables(db_conn_data):
-    print("Dropping tables")
+def drop_tables(db_conn_data: DBConnData):
+    logger.info("Dropping tables")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'jobs'
@@ -60,7 +72,7 @@ def drop_tables(db_conn_data):
     enact_db_transaction(sql_file, db_conn_data)
 
 
-def enact_db_transaction(statement, db_conn_data):
+def enact_db_transaction(statement: str, db_conn_data: DBConnData):
     with psycopg2.connect(
         dbname=db_conn_data["db_name"],
         user=db_conn_data["db_user"],
@@ -71,11 +83,11 @@ def enact_db_transaction(statement, db_conn_data):
         with connection.cursor() as cursor:
             cursor.execute(statement)
             connection.commit()
-            print("Transaction committed")
+            logger.info("Transaction committed")
 
 
-def create_views(db_conn_data):
-    print("Dropping tables")
+def create_views(db_conn_data: DBConnData):
+    logger.info("Creating views")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'jobs'
@@ -86,8 +98,8 @@ def create_views(db_conn_data):
 
     enact_db_transaction(sql_file, db_conn_data)
 
-def get_db_conn_data():
-    print("from get_db_conn_data")
+
+def get_db_conn_data() ->  DBConnData:
     return {
         "db_name": os.getenv("DB_NAME", "data_ticker"),
         "db_user": os.getenv("DB_USER", "postgres"),
@@ -95,5 +107,4 @@ def get_db_conn_data():
         "db_host": os.getenv("DB_HOST", "localhost"),
         "db_port": os.getenv("DB_PORT", 5432),
     }
-
 

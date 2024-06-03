@@ -4,9 +4,10 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 from connectors.database import enact_db_transaction
+from logger import logger
 
 def create_annual_company_data_table(db_conn_data):
-    print("Creating annual_company_data table")
+    logger.info("Creating annual_company_data table")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'jobs'
@@ -19,7 +20,7 @@ def create_annual_company_data_table(db_conn_data):
     enact_db_transaction(sql_file, db_conn_data)
 
 def run_transformations(db_conn_data):
-    print("Creating annual_company_data table")
+    logger.info("Creating annual_company_data table")
 
     current_dir = Path(__file__).parent
     parallel_dir = current_dir.parent / 'data' / 'migrations'
